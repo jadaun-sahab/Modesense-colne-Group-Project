@@ -1,0 +1,689 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: all 0.4s;
+  
+}
+
+/*--------------------- navbar starts--------------------- */
+
+#navbar {
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+#navbar::before {
+  position: fixed;
+  height: 50px;
+}
+#navbar .fa-bars {
+  display: none;
+  font-size: 2rem;
+}
+#navbar .fa-battle-net {
+  font-size: 1.2rem;
+}
+.logo {
+  font-size: 1.2rem;
+}
+.logo img{
+  width: 120px;
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+h4 {
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  font-family: "Lobster";
+  text-shadow: 2px 2px 15px black;
+  width: 150px;
+  border-radius: 2px;
+}
+
+h4 a {
+  color: black;
+  text-decoration: none;
+}
+.nav {
+  width: 100%;
+}
+.nav ul {
+  display: flex;
+}
+.nav ul li {
+  list-style: none;
+}
+.nav ul li a {
+  width: 80%;
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.nav ul li a:hover {
+  border-bottom: 2px solid brown;
+}
+.nav2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 10%;
+}
+.nav2 ul {
+  display: flex;
+}
+.nav2 ul li {
+  list-style: none;
+}
+.nav2 ul li a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.nav ul li ul {
+  display: none;
+}
+.nav ul li:hover > ul {
+  display: flex;
+  position: absolute;
+  top: 2.5rem;
+  box-shadow: 0px 2px 2px rgb(89, 88, 88);
+  padding: 15px 50px 10px 50px;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+}
+.nav ul li:hover > ul li {
+  padding: 10px 0;
+}
+
+/* <!------------------- navbar ends here -------------------> */
+
+#section1 {
+  background-color: #fff;
+  padding-top: 60px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+#section1 img {
+  width: 93%;
+  margin: 0 auto;
+  display: block;
+}
+#container {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.btn {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  position: relative;
+  color: rgb(199, 255, 201);
+  text-shadow: 3px 4px 15px rgb(0, 0, 0);
+}
+#previous,
+#previous2,
+#previous3 {
+  right: -6%;
+}
+
+#next,
+#next2,
+#next3 {
+  left: -6%;
+}
+
+/* <!------------------- section1 ends here -------------------> */
+
+#section2 {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+#section2 img {
+  width: 93%;
+}
+
+/* <!------------------- section2 ends here -------------------> */
+
+#section3 {
+  background: linear-gradient(
+    to right,
+    rgb(210, 238, 240),
+    rgb(241, 174, 231),
+    rgb(152, 152, 234)
+  );
+  padding: 50px 10px;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#section3 h1 {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.sec3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.sec3-1 {
+  margin: 10px 20px;
+  display: block;
+}
+.sec3-1 img {
+  width: 100%;
+}
+.sec3-1 h2 {
+  margin: 10px 0;
+}
+#section3 button {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 1px solid black;
+  font-weight: 500;
+  margin: 20px 0;
+  color: black;
+}
+#section3 button a {
+  text-decoration: none;
+}
+#section3 button:hover {
+  color: white;
+  background-color: black;
+}
+
+/* <!------------------- section3 ends here -------------------> */
+
+#section4 {
+  background: linear-gradient(
+    to right,
+    rgb(240, 210, 210),
+    rgb(244, 212, 239),
+    rgb(219, 219, 248)
+  );
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+#section4 h1 {
+  padding: 30px 0;
+  text-shadow: 2px 2px 2px white;
+  margin: 5px 10px;
+}
+
+.sec4 {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.sec4 img {
+  margin: 15px 10px;
+  border-radius: 10% 20%;
+  width: 90%;
+  box-shadow: 2px 2px 4px black;
+}
+.btn4 {
+  border-radius: 10px;
+  margin: 25px 10px;
+  padding: 10px;
+  border: hidden;
+  box-shadow: 2px 2px 14px black;
+  font-size: 1.3rem;
+  background-color: white;
+}
+.btn4:hover {
+  box-shadow: 2px 2px 7px black;
+  cursor: pointer;
+}
+.sec4 img:hover {
+  cursor: pointer;
+  transform: translateY(-12px);
+  box-shadow: 2px 2px 14px black;
+}
+
+/* <!------------------- section4 ends here -------------------> */
+
+#section6 {
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgb(247, 243, 243);
+  display: flex;
+}
+.sec6 {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+.sec6 h2 {
+  width: 44%;
+  line-height: 35px;
+  margin: 50px auto 0 auto;
+}
+.sec6 p {
+  width: 50%;
+  margin: 10px auto;
+}
+.sec6 button {
+  margin: 20px 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 8px 16px;
+  font-weight: bold;
+}
+.sec6 button:hover{
+  box-shadow: inset 160px 0 0 0 white;
+  color: black;
+}
+
+.sec6 img {
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 3em;
+}
+
+/* <!------------------- section6 ends here -------------------> */
+
+#section7 {
+  background: linear-gradient(
+    to right,
+    rgb(240, 210, 210),
+    rgb(244, 212, 239),
+    rgb(219, 219, 248)
+  );
+  font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  z-index: -1;
+  padding: 20px;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+}
+#section7 h2 {
+  color: black;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.sec7 {
+  display: black;
+}
+.sec7 a {
+  color: rgb(40, 40, 40);
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin: 5px 0;
+  text-decoration: none;
+  display: block;
+}
+.sec7-4 a {
+  font-size: 2rem;
+  color: black;
+  margin: 10px;
+}
+.sec7-last {
+  min-width: 20%;
+}
+#email {
+  padding: 10px 0;
+  width: 100%;
+  font-size: 1.2rem;
+  border: none;
+}
+.btnlast {
+  border: 1px solid black;
+  display: block;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+  padding: 8px 0;
+}
+.btnlast:hover {
+  background-color: black;
+  color: white;
+}
+h5 {
+  background: linear-gradient(
+    to right,
+    rgb(240, 210, 210),
+    rgb(244, 212, 239),
+    rgb(219, 219, 248)
+  );
+  padding: 3rem 10px;
+  font-size: 1rem;
+  margin: 0 auto;
+  text-align: center;
+  color: grey;
+}
+#gender {
+  font-size: 1.6rem;
+}
+
+/* <!------------------- section7 ends here -------------------> */
+
+#footer {
+  background-color: #fff;
+  padding: 15px;
+  height: 100%;
+  margin: auto;
+  align-items: center;
+  display: flex;
+}
+.one {
+  margin: 10px auto;
+  padding: 0 20px;
+  width: 50%;
+  justify-content: flex-start;
+  display: flex;
+}
+.one span {
+  padding: 2px 2px;
+  font-size: 1.7rem;
+  border-radius: 40%;
+  border: 2px solid black;
+}
+.one p {
+  margin: 12px 0 0 15px;
+}
+.two {
+  padding: 0 20px;
+  display: flex;
+}
+.two li {
+  list-style: none;
+}
+.two li a {
+  font-size: 1rem;
+  padding: 5px;
+  margin: 0 8px;
+  color: black;
+  border-radius: 50%;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+/* <!------------------- viewmore page starts here -------------------> */
+
+#section1-topiclist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  width: 90%;
+}
+#section1-topiclist img {
+  width: 80%;
+  margin: 10px;
+}
+h3 {
+  display: block;
+  width: 30%;
+  margin: auto;
+  font-size: 3rem;
+}
+
+/* <!------------------- viewmore page ends here -------------------> */
+
+#login {
+  z-index: 3;
+  position: absolute;
+  left: 12em;
+  top: 4rem;
+  background-color: #fff;
+  height: 80vh;
+  box-shadow: 2px 2px 8px black;
+  margin: 20px auto;
+  width: 65%;
+  display: flex;
+}
+.login-1 {
+  padding: 40px 50px;
+  width: 50%;
+  background-color: black;
+  color: white;
+}
+.login-2 {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  width: 50%;
+}
+.login-2 .diss {
+  position: absolute;
+  cursor: pointer;
+  font-size: 2rem;
+  right: 20px;
+  top: 10px;
+}
+.login-2 .diss:hover {
+  font-size: 2.2rem;
+}
+.login-1 h1 {
+  text-align: center;
+  margin: 0;
+  width: 90%;
+  padding: 0;
+  font-size: 3em;
+}
+.login-1 p {
+  text-align: center;
+  margin: 0 0 90px 0;
+  padding: 0;
+}
+.login-1 ol {
+  padding: 10px 0;
+  text-align: left;
+  font-size: 1.2rem;
+}
+.login-2 h5 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 200;
+  margin: 16px 0 30px 0;
+}
+.login-2 h6 {
+  font-size: 1.1rem;
+  font-weight: 240;
+  text-align: center;
+  margin: 6px 0;
+}
+#email2,
+#password2 {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px 0;
+  width: 70%;
+  margin: 6px auto;
+  display: block;
+}
+.login-2 button {
+  width: 70%;
+  margin-top: 1rem;
+  background-color: black;
+  color: white;
+  padding: 8px 0;
+  font-size: 1.1rem;
+}
+.fonta {
+  font-size: 2.5rem;
+  padding: 10px 20px;
+}
+.fonta a {
+  margin: 0 10px;
+  color: black;
+}
+.login-2 h3 {
+  width: 80%;
+  margin: 20px auto;
+  font-size: 1.4rem;
+  color: black;
+}
+
+/* ---------------------login------------------------- */
+
+.about {
+  text-align: center;
+  padding: 20px 0;
+}
+.about p {
+  margin: 20px 0;
+}
+#about1 p {
+  width: 70%;
+  margin: 20px auto;
+  display: block;
+}
+#about1 {
+  background-color: rgb(244, 241, 241);
+}
+#imagea {
+  width: 94%;
+  margin: 0 auto;
+  display: flex;
+}
+#about3 {
+  background-color: rgb(243, 243, 243);
+
+  display: block;
+}
+.btna {
+  width: 19%;
+  border: 1px solid black;
+  margin: 10px auto;
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+}
+.btna:hover {
+  box-shadow: inset 320px 0 0 0 black;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ---------------------about------------------------- */
+
+#feedback {
+  z-index: 6;
+  padding: 0 10px 10px 10px;
+  box-shadow: 2px 2px 8px black;
+  text-align: left;
+  background-color: #fff;
+  height: 75%;
+  width: 40%;
+  position: absolute;
+  top: 10em;
+  left: 25em;
+}
+#feedback p {
+  margin: 10px;
+}
+#feedback h4 {
+  font-size: 1.3rem;
+  font-family: fantasy;
+  margin: 0;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+  padding: 10px 5px;
+  background-color: rgb(216, 211, 211);
+  width: 100%;
+}
+#feedback input {
+  padding: 10px 0;
+  border: none;
+  width: 98%;
+}
+#textarea {
+  font-size: 1.5rem;
+}
+.btn7 {
+  font-size: 1.1rem;
+  padding: 7px 10px;
+  border: 1px solid black;
+  background-color: #fff;
+}
+.btn8 {
+  font-size: 1.1rem;
+  padding: 7px 10px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+.fa-headphones {
+  cursor: pointer;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* ---------------------feedback------------------------- */
+#login3 {
+  height: 750px;
+  background: linear-gradient(
+    130deg,
+    rgb(136, 241, 254),
+    rgb(70, 70, 246),
+    rgb(70, 70, 255),
+    rgb(136, 237, 255)
+  );
+}
+.login3 {
+  color: white;
+  position: relative;
+  top: 100px;
+  padding: 60px 20px;
+  width: 40%;
+  margin: 0 auto;
+  background-color: rgba(146, 136, 255, 0.589);
+  box-shadow: 2px 2px 8px rgb(243, 239, 239);
+  text-align: center;
+}
+.login3 h3 {
+  width: 80%;
+  margin-bottom: 2rem;
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+#email3,
+#password3 {
+  padding: 7px 10px;
+  margin: 5px 10px;
+  font-size: 1.2rem;
+  width: 80%;
+}
+#loginbtn {
+  border: none;
+  width: 40%;
+  margin: 10px;
+  background-color: rgb(99, 178, 247);
+  font-size: 1.2rem;
+  padding: 8px 50px;
+  box-shadow: 2px 2px 1px white;
+}
+#loginbtn a{
+  color: white;
+}
+#loginbtn:hover {
+  color: white;
+  cursor: pointer;
+ 
+}
+#loginbtn:active{
+  transform: translateY(4px);
+  box-shadow:  2px 2px 1px rgb(14, 128, 241);
+}

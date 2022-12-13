@@ -1,0 +1,308 @@
+/* <!------------------- media queries starts here -------------------> */
+
+@media (max-width: 1200px) {
+  #navi ul li ul li {
+    display: none;
+  }
+  #navbar .fa-bars {
+    left: 0;
+    display: block;
+  }
+  #navi ul {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    top: 1rem;
+    border-radius: 10px;
+    left: 2rem;
+    background: linear-gradient(
+      45deg,
+      rgba(3, 3, 3, 0.642),
+      rgb(64, 220, 255),
+      rgba(0, 0, 0, 0.473)
+    );
+  }
+
+  #navi ul li {
+    border: 2px solid white;
+    text-align: left;
+    padding: 8px 40px 20px 5px;
+  }
+  #navi ul li a {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: rgb(10, 10, 10);
+  }
+  .login3 {
+    width: 60%;
+  }
+  .login h3{
+    width: 90%;
+  }
+  #login {
+    width: 80%;
+    left: 7rem;
+  }
+  .login-1 h1 {
+    font-size: 2rem;
+  }
+  .login-1 p {
+    margin: 0 0 30px 0;
+  }
+  .logo {
+    width: 300%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .sec4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #section7 {
+    display: grid;
+    margin: auto;
+    padding: 0 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #section1-topiclist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sec7-last {
+    width: 100%;
+  }
+  #feedback {
+    width: 50%;
+    left: 18em;
+  }
+}
+
+
+/* <!------------------- screen-1 ends here -------------------> */
+
+
+@media (max-width: 850px) {
+  .one span{
+    display: none;
+  }
+  #container {
+    width: 85%;
+  }
+  #previous,
+  #previous2,
+  #previous3 {
+    right: -10%;
+  }
+  #next,
+  #next2,
+  #next3 {
+    left: -10%;
+  }
+  #login {
+    height: 100%;
+    left: 3rem;
+    width: 90%;
+    background-color: rgba(240, 248, 255, 0.909);
+  }
+  .login-1 {
+    display: none;
+  }
+  .login-2 {
+    width: 90%;
+    background: linear-gradient(
+      -45deg,
+      rgba(246, 144, 144, 0.619),
+      rgba(193, 137, 231, 0.619),
+      rgba(137, 137, 243, 0.619)
+    );
+  }
+  .sec3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sec4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #section6 {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec6 {
+    width: 90%;
+    text-align: center;
+    display: block;
+  }
+  #section7 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+ 
+  #feedback {
+    width: 90%;
+    left: 1em;
+  }
+}
+
+
+/* <!------------------- screen-2 ends here -------------------> */
+
+
+@media (max-width: 700px) {
+  .btna {
+    width: 50%;
+  }
+}
+
+
+/* <!------------------- screen-3 ends here -------------------> */
+
+
+@media (max-width: 600px) {
+  #login {
+    height: 100%;
+    left: 1rem;
+    width: 90%;
+  }
+  .login3 {
+    width: 90%;
+  }
+  .login-2 {
+    width: 100%;
+  }
+  #container {
+    margin: 0;
+    width: 90%;
+  }
+  #previous,
+  #previous2,
+  #previous3 {
+    right: -12%;
+  }
+  #next,
+  #next2,
+  #next3 {
+    left: -12%;
+  }
+  .btn {
+    font-size: 2rem;
+    padding: 0;
+  }
+  .sec6 h2 {
+    width: 90%;
+    margin: 20px 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+  #section7 {
+    padding: 0 20px;
+    display: block;
+  }
+  #footer {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 95%;
+  }
+  .two {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .two li a {
+    font-size: 0.8rem;
+  }
+  .two {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .one {
+    display: flex;
+    padding: 0;
+    width: 50%;
+    margin: 20px auto;
+  }
+}
+
+
+/* <!------------------- screen-4 ends here -------------------> */
+
+
+@media (max-width: 500px) {
+  .logo {
+    width: 100%;
+  }
+  .sec3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #section1-topiclist {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sec4 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #footer {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  #previous,
+  #previous2,
+  #previous3 {
+    right: -15%;
+  }
+  #next,
+  #next2,
+  #next3 {
+    left: -15%;
+  }
+  #feedback {
+    width: 90%;
+    left: 1em;
+  }
+  #loginbtn{
+    width: 80%;
+  }
+}
+
+
+/* <!------------------- screen-5 ends here -------------------> */
+
+
+@media (max-width: 350px) {
+  .btn {
+    font-size: 1rem;
+    padding: 0;
+  }
+  #section3 h1 {
+    width: 100%;
+    padding: 0 20x;
+    font-size: 1.5rem;
+  }
+  .sec7-4 a {
+    font-size: 1.5rem;
+  }
+  .sec6 h2 {
+    font-size: 1.2rem;
+  }
+  .logo {
+    text-align: left;
+    width: 55%;
+  }
+  #feedback {
+    width: 90%;
+    height: 100%;
+    left: 1rem;
+  }
+  .btna {
+    font-size: 0.8rem;
+    width: 60%;
+  }
+}
+
+/* //   ---------------------*---------------------*---------------------*--------------------- */
