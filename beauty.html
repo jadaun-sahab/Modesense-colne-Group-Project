@@ -5,62 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty</title>
+    <link rel="stylesheet" href="/beauty.css">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/responsive.css">
     <script src="https://kit.fontawesome.com/b06a377e67.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Baloo+2&family=Bebas+Neue&family=Courgette&family=Dancing+Script:wght@400;600&family=Dosis:wght@300&family=Lobster&family=Lobster+Two&family=Noto+Serif+Display:wght@100&family=Playfair+Display:ital@1&family=Ramaraja&family=Shadows+Into+Light&family=Ubuntu:wght@300&display=swap');
 
-        .bigbox{
-        display: flex;
-        height: 900px; 
-        width: 1400px; 
-        border: 1px solid black;
-        }
-    
-        .fp{
-        margin-top: 230px;
-        height: 600px; 
-        width: 350px; 
-        border: 1px solid red; 
-        }
-
-        .ps{
-        margin-top: 60px;
-        height: 600px; 
-        width: 1050px; 
-        border: 1px solid green; 
-        }
-        .num{
-            margin-top: 80px;
-        height: auto; 
-        width: 1050px; 
-        border: 1px solid orange; 
-        text-align: center;
-        }
-        div pre{
-            font-size: 17px;
-        }
-        .search{
-            display: flex;
-            align-items: center;
-            border: 2px solid white;
-            margin-left: 30px;
-            
-        }
-        div button{
-            padding: 5px 5px;
-            border: 2px solid white;
-            border-radius: 5px;
-            cursor: pointer;
-            font-family: 'Lato', sans-serif;
-            background-color: white;
-            
-        }
+        
     </style>
 </head>
 <body>
-<!----------------------------------------Nav Bar Starts--------------------------------------------->
+<div class="container">
     <div id="navbar">
         <i class="fa-solid fa-bars" onclick="menuitem()"></i>
         <div class="logo">
@@ -138,67 +94,55 @@
             </ul>
         </div>
     </div>
-<!---------------------------------------Nav Bar Ends------------------------------------------------->
-
-<!---------------------------------------Login Starts------------------------------------------------->
-<div id="login">
-    <div class="login-1">
-        <h1>Fashion hub</h1>
-        <p>BY SHOPPERS FOR SHOPPERS</p>
-        <ol><i class="fa-solid fa-bag-shopping"></i> COMPARE ACREOSS 500+ STORES</ol>
-        <ol><i class="fa-solid fa-bell"></i> GET ALERTS ON YOUR ITEMS</ol>
-        <ol><i class="fa-solid fa-file-circle-check"></i> SAVE YOUR SEARCHES</ol>
-        <ol><i class="fa-solid fa-heart"></i> MANAGE YOUR SHOPPING LIST</ol>
-        <ol><i class="fa-solid fa-trophy"></i> EARN POINTS</ol>
-    </div>
-    <div class="login-2">
-        <div class="diss" onclick="loginPage()">X</div>
-        <h3>Create an account</h3>
-        <h6>Unleash your shopping power.</h6>
-        <h6>Check ModeSens before you buy.</h6>
-        <div><input type="email" name="" id="email2" placeholder="Email"></div>
-        <div><input type="password" name="" id="password2" placeholder="Password"></div>
-        <div><input type="checkbox" name="" id="checkbox">Subscribe to personalized sale updates and offers </div>
-        <button id="btn1">SIGN UP</button>
-        <ul>or</ul>
-        <div class="fonta">
-            <a href="https://www.google.co.in/"><i class="fa-brands fa-google"></i></a>
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-            <a
-                href="https://appleid.apple.com/auth/authorize?client_id=com.modesens&redirect_uri=https%3A%2F%2Fmodesens.com%2Faccounts%2Fapple%2Flogin%2Fcallback%2F&response_mode=form_post&scope=name%20email&response_type=code%20id_token&state=uWQ9QcwNFx01"><i
-                    class="fa-brands fa-apple"></i></a>
+    <div id="login">
+        <div class="login-1">
+            <h1>Fashion hub</h1>
+            <p>BY SHOPPERS FOR SHOPPERS</p>
+            <ol><i class="fa-solid fa-bag-shopping"></i> COMPARE ACREOSS 500+ STORES</ol>
+            <ol><i class="fa-solid fa-bell"></i> GET ALERTS ON YOUR ITEMS</ol>
+            <ol><i class="fa-solid fa-file-circle-check"></i> SAVE YOUR SEARCHES</ol>
+            <ol><i class="fa-solid fa-heart"></i> MANAGE YOUR SHOPPING LIST</ol>
+            <ol><i class="fa-solid fa-trophy"></i> EARN POINTS</ol>
         </div>
-        <a href="/login.html">Already have an account? Please sign in.</a>
-    </div>
-</div>
-
-<div class="bigbox">
-    <div class="fp">
-        <pre>   FASHION HUB / SHOP / BEAUTY</pre>
-            &nbsp;
-         <div class="search">
-                <input type="text" name="search" id="search" placeholder="Search for products">
-                &nbsp;
-                <button class="button">&#128269</button>
+        <div class="login-2">
+            <div class="diss" onclick="loginPage()">X</div>
+            <h3>Create an account</h3>
+            <h6>Unleash your shopping power.</h6>
+            <h6>Check ModeSens before you buy.</h6>
+            <div><input type="email" name="" id="email2" placeholder="Email"></div>
+            <div><input type="password" name="" id="password2" placeholder="Password"></div>
+            <div><input type="checkbox" name="" id="checkbox">Subscribe to personalized sale updates and offers </div>
+            <button id="btn1">SIGN UP</button>
+            <ul>or</ul>
+            <div class="fonta">
+                <a href="https://www.google.co.in/"><i class="fa-brands fa-google"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a
+                    href="https://appleid.apple.com/auth/authorize?client_id=com.modesens&redirect_uri=https%3A%2F%2Fmodesens.com%2Faccounts%2Fapple%2Flogin%2Fcallback%2F&response_mode=form_post&scope=name%20email&response_type=code%20id_token&state=uWQ9QcwNFx01"><i
+                        class="fa-brands fa-apple"></i></a>
             </div>
-            <div clas="filter">
-                <p>FILTER BY:</p>
-                <div>
-                    
-                </div>
-            </div>
+            <a href="/login.html">Already have an account? Please sign in.</a>
+        </div>
     </div>
-    <div class="ps">
-        &nbsp;
+    <div class="heading">
+        <div>
         <h1>Designer Beauty</h1>
         &nbsp;
         &nbsp;
-        <p> <b> Shop designer beauty with price comparison across 500+ stores in one place. Discover the latest designer beauty at ModeSens.</b> </p>
-        <div class="num">
-            <pre><b> 1  2  3  4  5  6  ...  > </b></pre>
+        <p>Shop designer beauty with price comparison across 500+ stores in one place. Discover the latest designer beauty at ModeSens.</p>
         </div>
+    </div>
+    <div class="text">
+        <pre><b>   FASHION HUB /SHOP /BEAUTY                                                 1  2  3  4  5  6  ...  > </b></pre>
+    </div>
+    <div class="box">
+        <div class="filter"></div>
+        <div class="products"></div>
+    </div>
 </div>
-<!---------------------------------------Login Ends------------------------------------------------->
 </body>
+
 <script src="/index.js"></script>
+<script src="/beauty.js"></script>
+
 </html>
