@@ -1,0 +1,121 @@
+#Container{
+    margin: auto;
+    width: 85%;
+    /* border: 1px solid red; */
+}
+
+#jingImg img{
+    width: 100%;
+}
+
+#jingImg {
+    position: relative;
+}
+
+#first-txt{
+    font-size: 25px;
+    position: absolute;
+    top: 15%;
+    left: 50px;
+    color: white;
+}
+
+#second-txt {
+    position: absolute;
+    bottom: 20px;
+    right: 10%;
+    color: white;
+}
+
+#Compare {
+    padding: 5%;
+    background-color: #f8f7f6;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Compare>:nth-child(1){
+    margin-top: 7%;
+}
+
+#Compare img{
+    width: 100%;
+}
+
+#Partners{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#brands {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 10px;
+
+}
+
+#install{
+    width: 50%;
+    display: flex;
+    color: red;
+    padding: 10px 10px;
+    justify-content: space-evenly;
+    border: 1px solid red;
+
+}
+#install img{
+    width:20%;
+    
+}
+
+
+#Dload {
+    padding: 5%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+#Dload img{
+    width: 80%;
+}
+
+#Dload>:nth-child(2){
+    margin-top: 7%;
+}
+
+#playStore{
+    margin: auto;
+    display: flex;  
+    justify-content: space-between;
+
+}
+
+.Helped {
+    position: relative; 
+}
+
+.low {
+    margin: 0 10%;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: white;    
+}
+
+.low button{
+    background-color: red;
+    border: none;
+    color: #f8f7f6;
+    padding: 10px;
+}
+
+.Helped a{
+    color: #f8f7f6;
+}
+
+
+.Helped img{
+    width: 100%;
+    
+}
