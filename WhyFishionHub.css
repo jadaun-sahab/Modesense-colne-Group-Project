@@ -27,18 +27,18 @@
     color: white;
 }
 
-#Compare {
+.Compare {
     padding: 5%;
     background-color: #f8f7f6;
     display: flex;
     justify-content: space-between;
 }
 
-#Compare>:nth-child(1){
+.Compare>:nth-child(1){
     margin-top: 7%;
 }
 
-#Compare img{
+.Compare img{
     width: 100%;
 }
 
@@ -71,16 +71,19 @@
 
 #Dload {
     padding: 5%;
-    background-color: white;
     display: flex;
     justify-content: space-between;
 }
 #Dload img{
-    width: 80%;
+    width: 60%;
 }
 
 #Dload>:nth-child(2){
     margin-top: 7%;
+}
+
+#Dload a{
+    color: red;
 }
 
 #playStore{
@@ -90,7 +93,14 @@
 
 }
 
-.Helped {
+.join-btn{
+    background-color: red;
+    border: none;
+    color: #f8f7f6;
+    padding: 10px;
+}
+
+.Shopers-div {
     position: relative; 
 }
 
@@ -103,19 +113,27 @@
     color: white;    
 }
 
-.low button{
-    background-color: red;
-    border: none;
-    color: #f8f7f6;
-    padding: 10px;
-}
-
-.Helped a{
+.Shopers-div a{
     color: #f8f7f6;
 }
 
 
-.Helped img{
+.Shopers-div img{
     width: 100%;
     
+}
+
+#mission-text{
+    font-size: 25px;
+}
+
+.circle-div>div img{
+    border-radius: 50%;
+
+}
+
+.circle-div {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
 }
