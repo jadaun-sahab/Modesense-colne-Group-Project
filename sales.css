@@ -1,6 +1,8 @@
 /*---------------Sales description section---------------*/
 *{
     font-family: sans-serif;
+    letter-spacing: .5px;
+    line-height: 24px;
 }
 .sales-description{
     width:50%;
@@ -52,7 +54,7 @@
 .gift-deals-div>img{
     width:100%;
 }
-.gift-guide{
+.gift-hide{
     display:none;
 }
 
@@ -90,6 +92,9 @@
 .search-div>img{
     width:17px;
 }
+.box-shadow{
+    box-shadow: rgba(100, 188, 255, 0.942) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
 .best-sellers-func>button{
     background-color: white;
     /* border: 1px solid black; */
@@ -106,8 +111,8 @@
     margin-top: 20px;
 }
 .seller-div{
-    width:515px;
-    height: 120px;
+    width:580px;
+    height: 130px;
     border:1px solid lightgrey;
     display: flex;
     padding: 20px 10px;
@@ -178,4 +183,56 @@
     display: flex;
     align-items: center;
 }
+
+/*---------------------Info section--------------------*/
+.sale-info{
+    width:74%;
+    margin:50px auto;
+    padding: 10px 0;
+    font-size: 19px;
+    background-color: #f5f5f5;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+.sale-info>h5{
+    margin-top: 50px;
+    text-align: center;
+    line-height: 30px;
+}
+.all-info-cont{
+    /* border: 1px solid black; */
+    width:90%;
+    margin:40px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+.inner-info-cont{
+    display: flex;
+    justify-content: space-evenly;
+}
+.info-img-cont{
+    /* border:1px solid blue; */
+    width:20%;
+}
+.info-img-cont>img{
+    margin:30px;
+}
+.info-details-cont{
+    /* border:1px solid red; */
+    width:60%;
+    color: #6c757d
+}
+.info-anchor{
+    color: #6c757d;
+    font-size: 17px;
+    font-weight: bold;
+
+}
+.hover-pointer:hover{
+    cursor: pointer;
+}
+
+
+
 

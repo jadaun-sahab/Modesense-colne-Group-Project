@@ -459,7 +459,7 @@ function renderGiftDeals(data) {
     giftDealContainer.innerHTML="";
     let newBannerData=data.map((item)=>{
         return `
-        <div class="gift-deals-div">
+        <div class="gift-deals-div hover-pointer">
           <img
             src=${item}
             alt="Banner"
@@ -474,7 +474,7 @@ function renderBestSellers(data){
     bestSellersContainer.innerHTML="";
     let newBestSellerData=data.map((item)=>{
         return `
-        <div class="seller-div">
+        <div class="seller-div hover-pointer">
             <div class="seller-logo">
               <img alt="SELLER LOGO" src=${item.avatar}/>
             </div>
@@ -484,11 +484,11 @@ function renderBestSellers(data){
                 </div>
                 <div class="seller-desc-buttons">
                     <div>
-                       ${item.exclusive ? `<button> EXCLUSIVE </button>`: ""}
+                       ${item.exclusive ? `<button class="hover-pointer"> EXCLUSIVE </button>`: ""}
                     </div>
                     <div>
-                       <button> SHOP NOW </button>
-                       <button>
+                       <button class="hover-pointer"> SHOP NOW </button>
+                       <button class="hover-pointer">
                           <img alt="SHARE LOGO" src="https://cdn.modesens.com/static/img/20190805Vector.svg" />
                        </button>
                     </div>
@@ -499,6 +499,26 @@ function renderBestSellers(data){
     });
     bestSellersContainer.innerHTML= newBestSellerData.join("");
 }
+
+/*---------------------Div switch functionality------------------*/
+let giftDealsClick=document.querySelector(".gift-deals-click");
+giftDealsClick.addEventListener("click",(e)=>{
+    //console.log(e);
+    e.target.classList.add("gift-header-default");
+    e.path[1].children[1].classList.remove("gift-header-default");
+    e.path[2].children[1].children[1].classList.add("gift-hide");
+    e.path[2].children[1].children[0].classList.remove("gift-hide");    
+})
+
+let giftGuideClick=document.querySelector(".gift-guide-click");
+giftGuideClick.addEventListener("click",(e)=>{
+    //console.log(e);
+    e.target.classList.add("gift-header-default");
+    e.path[1].children[0].classList.remove("gift-header-default");
+    e.path[2].children[1].children[0].classList.add("gift-hide");
+    e.path[2].children[1].children[1].classList.remove("gift-hide");
+})
+
 
 /*----------------------Search Functionality----------------------*/
 let searchTag=document.querySelector(".search-div>input");
@@ -517,10 +537,22 @@ searchTag.addEventListener("input",()=>{
     renderBestSellers(filteredData);
 });
 
+searchTag.addEventListener("click", (e)=>{
+    //console.log(e);
+    let searchdiv=e.path[1];
+    if(searchdiv.classList[1]){
+        searchdiv.classList.remove("box-shadow");
+    }else{
+        searchdiv.classList.add("box-shadow");
+    }
+})
+
+
 /*----------------------Filter Functionality----------------------*/
 let filterBtn=document.querySelector(".exc-filter");
 let click=0;
 filterBtn.addEventListener("click",(e)=>{
+    console.log(e);
     click++;
     if(filteredData){
         exclusiveData=filteredData.filter((item)=>{
@@ -532,10 +564,20 @@ filterBtn.addEventListener("click",(e)=>{
     })
     }
     if(click%2==1){
+        e.path[0].innerHTML=`
+        EXCLUSIVE OFFERS &nbsp;&nbsp;&nbsp;
+            <img alt="filter logo" src="https://cdn.modesens.com/static/img/checkmark.svg"/>
+        `
         filterBtn.style.backgroundColor="red";
+        filterBtn.style.border="none";
         renderBestSellers(exclusiveData);
     }else{
+        e.path[0].innerHTML=`
+        EXCLUSIVE OFFERS &nbsp;&nbsp;&nbsp;
+            <img alt="filter logo" src="https://cdn.modesens.com/static/img/filter_icon.svg"/>
+        `
         filterBtn.style.backgroundColor="white";
+        filterBtn.style.border="1px solid black";
         exclusiveData=[...bestSellers];
         if(filteredData){
             renderBestSellers(filteredData);
@@ -544,3 +586,5 @@ filterBtn.addEventListener("click",(e)=>{
         }
     }
 });
+
+
