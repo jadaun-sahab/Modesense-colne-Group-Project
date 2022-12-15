@@ -4,7 +4,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   transition: all 0.4s;
-  
 }
 
 /*--------------------- navbar starts--------------------- */
@@ -22,7 +21,7 @@
 }
 #navbar::before {
   position: fixed;
-  height: 50px;
+  height: 55px;
 }
 #navbar .fa-bars {
   display: none;
@@ -34,7 +33,7 @@
 .logo {
   font-size: 1.2rem;
 }
-.logo img{
+.logo img {
   width: 120px;
   padding: 5px 10px;
   border: 1px solid black;
@@ -47,7 +46,6 @@ h4 {
   width: 150px;
   border-radius: 2px;
 }
-
 h4 a {
   color: black;
   text-decoration: none;
@@ -63,11 +61,12 @@ h4 a {
 }
 .nav ul li a {
   width: 80%;
-  color: black;
   padding: 5px 10px;
   text-decoration: none;
+  color: rgb(93, 90, 90);
 }
 .nav ul li a:hover {
+  color: black;
   border-bottom: 2px solid brown;
 }
 .nav2 {
@@ -192,19 +191,17 @@ h4 a {
   margin: 10px 0;
 }
 #section3 button {
-  background-color: rgb(255, 255, 255);
   padding: 10px;
   border: 1px solid black;
   font-weight: 500;
   margin: 20px 0;
-  color: black;
 }
 #section3 button a {
   text-decoration: none;
 }
 #section3 button:hover {
+  box-shadow: inset 110px 0 0 0 black;
   color: white;
-  background-color: black;
 }
 
 /* <!------------------- section3 ends here -------------------> */
@@ -245,12 +242,11 @@ h4 a {
   margin: 25px 10px;
   padding: 10px;
   border: hidden;
-  box-shadow: 2px 2px 14px black;
   font-size: 1.3rem;
-  background-color: white;
 }
 .btn4:hover {
-  box-shadow: 2px 2px 7px black;
+  color: rgb(255, 255, 255);
+  box-shadow: inset 0 50px 0 0px black;
   cursor: pointer;
 }
 .sec4 img:hover {
@@ -261,6 +257,74 @@ h4 a {
 
 /* <!------------------- section4 ends here -------------------> */
 
+#section5 {
+  text-align: center;
+}
+#section5 h1 {
+  font-family: "Baloo 2", cursive;
+  margin: 10px 0;
+}
+
+.section5 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sec5 {
+  padding: 10px 0;
+  margin: 4px;
+  border: 1px solid rgb(240, 238, 238);
+  width: 300px;
+  display: block;
+  text-align: center;
+}
+.sec5 > img {
+  width: 250px;
+  object-fit: cover;
+  height: 300px;
+}
+.sec5:hover>img{
+  width: 260px;
+  box-shadow: 2px 2px 12px rgb(192, 190, 190);
+  cursor: pointer;
+}
+.sec5 h3 {
+  padding: 10px 0;
+  font-size: 1rem;
+}
+.sec5 h4 {
+  color: grey;
+  text-shadow: none;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sec5 h6 {
+  padding: 10px 0;
+  font-size: 1rem;
+  color: rgb(180, 28, 28);
+}
+.sec5 h6 span {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+}
+.sec5 h7 {
+  padding: 10px 0;
+  color: grey;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0;
+}
+
+#section5 button {
+  margin: 2rem auto;
+  display: block;
+  padding: 8px 16px;
+  font-weight: 400;
+}
+#section5 button:hover {
+  box-shadow: inset 160px 0 0 0 rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+/* <!------------------- section5 ends here -------------------> */
 #section6 {
   height: 100%;
   margin: 0 auto;
@@ -289,7 +353,7 @@ h4 a {
   padding: 8px 16px;
   font-weight: bold;
 }
-.sec6 button:hover{
+.sec6 button:hover {
   box-shadow: inset 160px 0 0 0 white;
   color: black;
 }
@@ -355,7 +419,7 @@ h4 a {
   padding: 8px 0;
 }
 .btnlast:hover {
-  background-color: black;
+box-shadow: inset 0 0 0 50px black;
   color: white;
 }
 h5 {
@@ -675,17 +739,14 @@ h3 {
   padding: 8px 50px;
   box-shadow: 2px 2px 1px white;
 }
-#loginbtn a{
+#loginbtn a {
   color: white;
 }
 #loginbtn:hover {
   color: white;
   cursor: pointer;
- 
 }
-#loginbtn:active{
+#loginbtn:active {
   transform: translateY(4px);
-  box-shadow:  2px 2px 1px rgb(14, 128, 241);
+  box-shadow: 2px 2px 1px rgb(14, 128, 241);
 }
-
-
