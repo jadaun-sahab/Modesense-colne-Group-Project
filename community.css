@@ -45,8 +45,8 @@
     border: 1px solid rgb(45, 45, 45);
 }
 #first>button:hover{
-    border-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: black;
+    color: white;
 }
 #first>p{
     width: 40%;
@@ -69,10 +69,30 @@
     width: 100px;
     border: 1px solid black;
     background-color: white;
+    
 }
 #loadmore>button:hover{
-    /* background-color: rgb(208, 208, 208); */
-    /* border-radius: 20px; */
-    border-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (min-width:301px) and (max-width:1200px){
+    #allpost{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto; 
+    }
+}
+@media screen and (min-width:50px) and (max-width:300px){
+    #allpost{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto; 
+    }
+}
+@media screen and (min-width:50px) and (max-width:1000px){
+
+#comoption{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+}
 }
