@@ -1,7 +1,106 @@
+/*--------------------- navbar starts--------------------- */
+
+#navbar {
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+  }
+  #navbar::before {
+    position: fixed;
+    height: 50px;
+  }
+  #navbar .fa-bars {
+    display: none;
+    font-size: 2rem;
+  }
+  #navbar .fa-battle-net {
+    font-size: 1.2rem;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .logo img{
+    width: 120px;
+    padding: 5px 10px;
+    border: 1px solid black;
+  }
+  h4 {
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    font-family: "Lobster";
+    text-shadow: 2px 2px 15px black;
+    width: 150px;
+    border-radius: 2px;
+  }
+  
+  h4 a {
+    color: black;
+    text-decoration: none;
+  }
+  .nav {
+    width: 100%;
+  }
+  .nav ul {
+    display: flex;
+  }
+  .nav ul li {
+    list-style: none;
+  }
+  .nav ul li a {
+    width: 80%;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  .nav ul li a:hover {
+    border-bottom: 2px solid brown;
+  }
+  .nav2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 10%;
+  }
+  .nav2 ul {
+    display: flex;
+  }
+  .nav2 ul li {
+    list-style: none;
+  }
+  .nav2 ul li a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  .nav ul li ul {
+    display: none;
+  }
+  .nav ul li:hover > ul {
+    display: flex;
+    position: absolute;
+    top: 2.5rem;
+    box-shadow: 0px 2px 2px rgb(89, 88, 88);
+    padding: 15px 50px 10px 50px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+  }
+  .nav ul li:hover > ul li {
+    padding: 10px 0;
+  }
+  
+  /* <!------------------- navbar ends here -------------------> */
+
 #Container{
+    padding-top: 50px;
     margin: auto;
     width: 85%;
-    /* border: 1px solid red; */
 }
 
 #jingImg img{
@@ -137,3 +236,123 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+
+/* <!------------------- section6 ends here -------------------> */
+
+#section7 {
+    background: linear-gradient(
+      to right,
+      rgb(240, 210, 210),
+      rgb(244, 212, 239),
+      rgb(219, 219, 248)
+    );
+    font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+    z-index: -1;
+    padding: 20px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+  }
+  #section7 h2 {
+    color: black;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+  .sec7 {
+    display: black;
+  }
+  .sec7 a {
+    color: rgb(40, 40, 40);
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin: 5px 0;
+    text-decoration: none;
+    display: block;
+  }
+  .sec7-4 a {
+    font-size: 2rem;
+    color: black;
+    margin: 10px;
+  }
+  .sec7-last {
+    min-width: 20%;
+  }
+  #email {
+    padding: 10px 0;
+    width: 100%;
+    font-size: 1.2rem;
+    border: none;
+  }
+  .btnlast {
+    border: 1px solid black;
+    display: block;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    padding: 8px 0;
+  }
+  .btnlast:hover {
+    background-color: black;
+    color: white;
+  }
+  h5 {
+    background: linear-gradient(
+      to right,
+      rgb(240, 210, 210),
+      rgb(244, 212, 239),
+      rgb(219, 219, 248)
+    );
+    padding: 3rem 10px;
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    color: grey;
+  }
+  #gender {
+    font-size: 1.6rem;
+  }
+  
+  /* <!------------------- section7 ends here -------------------> */
+  
+  #footer {
+    background-color: #fff;
+    padding: 15px;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+  }
+  .one {
+    margin: 10px auto;
+    padding: 0 20px;
+    width: 50%;
+    justify-content: flex-start;
+    display: flex;
+  }
+  .one span {
+    padding: 2px 2px;
+    font-size: 1.7rem;
+    border-radius: 40%;
+    border: 2px solid black;
+  }
+  .one p {
+    margin: 12px 0 0 15px;
+  }
+  .two {
+    padding: 0 20px;
+    display: flex;
+  }
+  .two li {
+    list-style: none;
+  }
+  .two li a {
+    font-size: 1rem;
+    padding: 5px;
+    margin: 0 8px;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-decoration: none;
+  }
+  
