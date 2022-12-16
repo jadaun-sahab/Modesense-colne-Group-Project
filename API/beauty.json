@@ -1,27 +1,33 @@
 [
     {
-        "title": "Caudalie Vinergetic Mask",
+        "title": "Gucci Caudalie Vinere Mask",
         "avatar": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/c/8/c8af0743522931003525_1.jpg",
         "price": "958.00",
         "qty": "75 ml",
         "rating": "★★★★☆",
-        "id": "1"
+        "id": "1",
+        "brand": "Gucci",
+        "categories": "Mask"
     },
     {
-        "title": "Bobbi Brown Skin Cover",
+        "title": "Gucci Brown Skin Cover",
         "avatar": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/0/a/0a30390716170295640_0.jpg",
         "price": "54.00",
         "qty": "2 ml",
         "rating": "★★★☆☆",
-        "id": "2"
+        "id": "2",
+        "brand": "Gucci",
+        "categories": "Skincare"
     },
     {
-        "title": "Murad Dark Spot Serum",
+        "title": "Forest Dark Spot Serum",
         "avatar": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/5/d/5df0988767332153636_1.jpg",
         "price": "238.00",
         "qty": "10 ml",
         "rating": "★★★★☆",
-        "id": "3"
+        "id": "3",
+        "brand": "Forest",
+        "categories": "Serum"
     },
     {
         "title": "L'Occitane Precious Emulsion",
@@ -29,7 +35,9 @@
         "price": "974.00",
         "qty": "100 ml",
         "rating": "★★★★★",
-        "id": "4"
+        "id": "4",
+        "brand": "Chanel",
+        "categories": "Skincare"
     },
     {
         "title": "Gucci Bloom",
@@ -37,15 +45,19 @@
         "price": "262.00",
         "qty": "90 ml",
         "rating": "★★★★★",
-        "id": "5"
+        "id": "5",
+        "brand": "Gucci",
+        "categories": "Mask"
     },
     {
-        "title": "PIXI Glow Mist",
+        "title": "PIXI Glow Mask",
         "avatar": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/i/m/image_1_30_79.jpg",
         "price": "491.00",
         "qty": "50 ml",
         "rating": "★★★★☆",
-        "id": "6"
+        "id": "6",
+        "brand": "Chanel",
+        "categories": "Mask"
     },
     {
         "title": "Estee Lauder Serum",
@@ -53,15 +65,19 @@
         "price": "80.00",
         "qty": "5 ml",
         "rating": "★★★★☆",
-        "id": "7"
+        "id": "7",
+        "brand": "Estee",
+        "categories": "Serum"
     },
     {
-        "title": "Jo Malone London Peony",
+        "title": "Jo Malone Peony",
         "avatar": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/8/c/8c9c05c690251081516_0.jpg",
         "price": "865.00",
         "qty": "10 ml",
         "rating": "★★★★★",
-        "id": "8"
+        "id": "8",
+        "brand": "Carolina",
+        "categories": "Serum"
     },
     {
         "title": "Forest Essentials Artisanal",
@@ -69,15 +85,19 @@
         "price": "98.00",
         "qty": "50 ml",
         "rating": "★★★☆☆",
-        "id": "9"
+        "id": "9",
+        "brand": "Forest",
+        "categories": "Serum"
     },
     {
-        "title": "Givenchy Mini Lerouge",
+        "title": "Givenchy Mini Duo Lerouge",
         "avatar": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/0/3/03fba90GIVEN00000241_0.jpg",
         "price": "572.00",
         "qty": "75 ml",
         "rating": "★★★★☆",
-        "id": "10"
+        "id": "10",
+        "brand": "Chanel",
+        "categories": "Lipstick"
     },
     {
         "title": "Kama Ayurveda Skincare",
@@ -85,15 +105,19 @@
         "price": "944.00",
         "qty": "2 ml",
         "rating": "★★★☆☆",
-        "id": "11"
+        "id": "11",
+        "brand": "Carolina",
+        "categories": "Skincare"
     },
     {
-        "title": "Smashbox Lipstick Duo",
+        "title": "Estee Smashbox Lipstick Duo",
         "avatar": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/2/0/20ba6aeSMASH00000104_0.jpg",
         "price": "624.00",
         "qty": "10 ml",
         "rating": "★★★★☆",
-        "id": "12"
+        "id": "12",
+        "brand": "Estee",
+        "categories": "Lipstick"
     },
     {
         "title": "The Ordinary The No-Brainer Set",
@@ -101,7 +125,9 @@
         "price": "377.00",
         "qty": "100 ml",
         "rating": "★★★★★",
-        "id": "13"
+        "id": "13",
+        "brand": "Carolina",
+        "categories": "Skincare"
     },
     {
         "title": "Clinique Hydrate & Glow Set",
@@ -109,39 +135,49 @@
         "price": "722.00",
         "qty": "90 ml",
         "rating": "★★★★★",
-        "id": "14"
+        "id": "14",
+        "brand": "Carolina",
+        "categories": "Mask"
     },
     {
-        "title": "Nudestix Mini Sunkissed Kit",
+        "title": "Estee Nudestix Sunkissed Kit",
         "avatar": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/7/0/701f9f7NUDES00000092_0.jpg",
         "price": "143.00",
         "qty": "50 ml",
         "rating": "★★★★☆",
-        "id": "15"
+        "id": "15",
+        "brand": "Estee",
+        "categories": "Lipstick"
     },
     {
-        "title": "Carolina Herrera",
+        "title": "Carolina Duo Eau Herrera",
         "avatar": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/6/9/69fef908411061995754.jpg",
         "price": "145.00",
         "qty": "50 ml",
         "rating": "★★★☆☆",
-        "id": "16"
+        "id": "16",
+        "brand": "Carolina",
+        "categories": "Lipstick"
     },
     {
-        "title": "Gucci Bloom Eau De Toilette",
+        "title": "Chanel Bloom Eau De Toilette",
         "avatar": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/b/a/ba776303616302514298_1.jpg",
         "price": "612.00",
         "qty": "10 ml",
         "rating": "★★★★★",
-        "id": "17"
+        "id": "17",
+        "brand": "Chanel",
+        "categories": "Perfume"
     },
     {
-        "title": "Yves Saint Laurent",
+        "title": "Yves Saint Eau De Laurent",
         "avatar": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/1/2/12d2e183614272648425_1.jpg",
         "price": "878.00",
         "qty": "5 ml",
         "rating": "★★★★☆",
-        "id": "18"
+        "id": "18",
+        "brand": "Chanel",
+        "categories": "Perfume"
     },
     {
         "title": "DIOR J'adore Eau De Parfum",
@@ -149,22 +185,18 @@
         "price": "478.00",
         "qty": "50 ml",
         "rating": "★★★★☆",
-        "id": "19"
+        "id": "19",
+        "brand": "Carolina",
+        "categories": "Perfume"
     },
     {
-        "title": "Versace Pour Femme",
+        "title": "Estee Versace Eau De Femme",
         "avatar": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/8/0/8011003839094_dylanblue-pf_30ml_bottle.jpg",
         "price": "922.00",
         "qty": "75 ml",
         "rating": "★★★★☆",
-        "id": "20"
-    },
-    {
-        "title": "HERMES Terre D'hermes",
-        "avatar": "https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/e/c/ecfcbef3346130012269_1.jpg",
-        "price": "981.00",
-        "qty": "2 ml",
-        "rating": "★★★☆☆",
-        "id": "21"
+        "id": "20",
+        "brand": "Estee",
+        "categories": "Perfume"
     }
 ]

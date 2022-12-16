@@ -6,6 +6,7 @@
 
 .container{
     display: grid;
+    
     }
 
 .heading{
@@ -26,11 +27,6 @@
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     color: #555;
-}
-.filter{
-    height: 900px; 
-    width: 300px; 
-    border: 1px solid green; 
 }
 .products{
     width: 1100px; 
@@ -70,4 +66,46 @@
     background-color: white;
     border: none;
     box-shadow: none;
+}
+.product .button{
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    background-color: #3e628f;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.product .button i{
+    padding-left: 10px;
+}
+.filter{
+    width: 300px;
+    
+}
+#search{
+    margin-top: 10px;
+    width: 250px;
+    height: 50px;
+    margin-left: 8px;
+}
+.filter select{
+    width: 250px;
+    height: 30px;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+#reset{
+   width: 80px; 
+   height: 25px;
+   background-color: white;
+   border: none;
+}
+#filterby{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#format{
+    font-size: 15px;
 }
