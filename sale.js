@@ -488,7 +488,7 @@ function renderBestSellers(data){
                     </div>
                     <div>
                        <button class="hover-pointer"> SHOP NOW </button>
-                       <button class="hover-pointer">
+                       <button class="hover-pointer share-click">
                           <img alt="SHARE LOGO" src="https://cdn.modesens.com/static/img/20190805Vector.svg" />
                        </button>
                     </div>
@@ -498,6 +498,22 @@ function renderBestSellers(data){
         `
     });
     bestSellersContainer.innerHTML= newBestSellerData.join("");
+
+    /*----------------------Share popup Functionality----------------------*/
+
+    let shareBtns=document.querySelectorAll(".share-click");
+    for(let shareBtn of shareBtns){
+    shareBtn.addEventListener("click", (e)=>{
+        let sharePopup=document.querySelector(".share-popup");
+        sharePopup.classList.remove("share-popup-hide");
+    })
+    }
+
+    let shareClose=document.querySelector(".share-popup-close");
+    shareClose.addEventListener("click",(e)=>{
+    let sharePopup=document.querySelector(".share-popup");
+    sharePopup.classList.add("share-popup-hide");
+    })
 }
 
 /*---------------------Div switch functionality------------------*/
@@ -552,7 +568,7 @@ searchTag.addEventListener("click", (e)=>{
 let filterBtn=document.querySelector(".exc-filter");
 let click=0;
 filterBtn.addEventListener("click",(e)=>{
-    console.log(e);
+    //console.log(e);
     click++;
     if(filteredData){
         exclusiveData=filteredData.filter((item)=>{
@@ -586,5 +602,7 @@ filterBtn.addEventListener("click",(e)=>{
         }
     }
 });
+
+
 
 
