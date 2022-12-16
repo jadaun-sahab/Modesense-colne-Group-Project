@@ -6,8 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales</title>
     <link rel="stylesheet" href="sales.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
+<!-----------------Navbar section----------------->
+    <div id="navbar">
+        <i class="fa-solid fa-bars" onclick="menuitem()"></i>
+        <div class="logo">
+            <h4><a href="/index.html"><img src="images/logo5.jpg" alt=""></a>
+            </h4>
+        </div>
+        <div class="nav" id="navi">
+            <ul>
+                <li><a href="/womens.html">WOMEN</a>
+                    <ul>
+                        <li><a href="#">SHOP ALL</a></li>
+                        <li><a href="#">CLOTHING</a></li>
+                        <li><a href="#">BAGS</a></li>
+                        <li><a href="#">SHOES</a></li>
+                        <li><a href="#">ACCESSORIES</a></li>
+                        <li><a href="#">BEAUTY</a></li>
+                        <li><a href="#">SALE</a></li>
+                        <li><a href="#">PRE-OWNED</a></li>
+                    </ul>
+                </li>
+                <li><a href="/mens.html">MEN</a>
+                    <ul>
+                        <li><a href="#">SHOP ALL</a></li>
+                        <li><a href="#">CLOTHING</a></li>
+                        <li><a href="#">BAGS</a></li>
+                        <li><a href="#">SHOES</a></li>
+                        <li><a href="#">ACCESSORIES</a></li>
+                        <li><a href="#">GROOMING</a></li>
+                        <li><a href="#">SALE</a></li>
+                        <li><a href="#">PRE-OWNED</a></li>
+                    </ul>
+                </li>
+             
+                <li><a href="/kids.html">KIDS</a>
+                    <ul>
+                        <li><a href="#">SHOP ALL</a></li>
+                        <li><a href="#">BABT GIRLS</a></li>
+                        <li><a href="#">BABY BOY</a></li>
+                        <li><a href="#">GIRLS</a></li>
+                        <li><a href="#">BOY</a></li>
+                        <li><a href="#">SALE</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/beauty.html">BEAUTY</a>
+                    <ul>
+                        <li><a href="#">SHOP ALL</a></li>
+                        <li><a href="#">WOMEN'S BEAUTY</a></li>
+                        <li><a href="#">MEN'S GROOMING</a></li>
+                        <li><a href="#">KID'S CARE</a></li>
+                        <li><a href="#">SALE</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/feedback.html">FEEDBACK</a>
+
+                </li>
+                <li><a href="/community.html">COMMUNITY</a>
+                    <ul>
+                        <li><a href="#">DISCOVER</a></li>
+                        <li><a href="#">BLOGS</a></li>
+                        <li><a href="#">MY CLOSET</a></li>
+                        <li><a href="#">INFLUENCER PROGRAM</a></li>
+                    </ul>
+                </li>
+                <li><a href="/WhyFishionHub.html">FASHION HUB</a></li>
+                <li><a href="/sale.html">SALE</a></li>
+                <li><a href="/about.html">ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="nav2">
+            <ul>
+                <li><a href="#"><i class="fa-regular fa-user" onclick="loginPage()"></i>&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="login">
+        <div class="login-1">
+            <h1>JS-ecom</h1>
+            <p>BY SHOPPERS FOR SHOPPERS</p>
+            <ol><i class="fa-solid fa-bag-shopping"></i> COMPARE ACREOSS 500+ STORES</ol>
+            <ol><i class="fa-solid fa-bell"></i> GET ALERTS ON YOUR ITEMS</ol>
+            <ol><i class="fa-solid fa-file-circle-check"></i> SAVE YOUR SEARCHES</ol>
+            <ol><i class="fa-solid fa-heart"></i> MANAGE YOUR SHOPPING LIST</ol>
+            <ol><i class="fa-solid fa-trophy"></i> EARN POINTS</ol>
+        </div>
+        <div class="login-2">
+            <div class="diss" onclick="loginPage()">X</div>
+            <h3>Create an account</h3>
+            <h6>Unleash your shopping power.</h6>
+            <h6>Check ModeSens before you buy.</h6>
+            <div><input type="email" name="" id="email2" placeholder="Email"></div>
+            <div><input type="password" name="" id="password2" placeholder="Password"></div>
+            <div><input type="checkbox" name="" id="checkbox">Subscribe to personalized sale updates and offers </div>
+            <button id="btn1">SIGN UP</button>
+            <ul>or</ul>
+            <div class="fonta">
+                <a href="https://www.google.co.in/"><i class="fa-brands fa-google"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a
+                    href="https://appleid.apple.com/auth/authorize?client_id=com.modesens&redirect_uri=https%3A%2F%2Fmodesens.com%2Faccounts%2Fapple%2Flogin%2Fcallback%2F&response_mode=form_post&scope=name%20email&response_type=code%20id_token&state=uWQ9QcwNFx01"><i
+                        class="fa-brands fa-apple"></i></a>
+            </div>
+            <a href="/login.html">Already have an account? Please sign in.</a>
+        </div>
+    </div>
+
+<!-----------------Sales description section----------------->
+
     <div class="sales-description">
         <br><br>
         <h1>Holiday Gift Guide | Fashion Hub</h1>
@@ -18,6 +131,8 @@
             Fendi, Prada, Dolce & Gabbana, Balenciaga and more. Don't miss out on the latest daily deal, 
             and check Fashion Hub before you buy!</h2>
     </div>
+
+<!-----------------Gift section----------------->
     <div class="gift-master">
         <div class="gift-header">
             <div class="gift-header-adjust gift-header-default gift-deals-click hover-pointer">Best Holiday Gift guide And Details</div>
@@ -32,6 +147,8 @@
             </div>
         </div>
     </div>
+
+<!-----------------Best Sellers section----------------->    
     <div class="best-sellers-master">
         <h1 style="text-align:center">Today’s Best Sellers</h1>
         <div class="best-sellers-main">
@@ -43,8 +160,8 @@
                 <button class="exc-filter hover-pointer">EXCLUSIVE OFFERS &nbsp;&nbsp;&nbsp;
                     <img alt="filter logo" src="https://cdn.modesens.com/static/img/filter_icon.svg"/>
                 </button>
-                <button class="share-btn hover-pointer">SHARE &nbsp;&nbsp;&nbsp;
-                    <img alt="filter logo" src="https://cdn.modesens.com/static/img/20190805Vector.svg"/>
+                <button class="share-btn hover-pointer share-click">SHARE &nbsp;&nbsp;&nbsp;
+                    <img alt="share logo" src="https://cdn.modesens.com/static/img/20190805Vector.svg"/>
                 </button>
             </div>
             <div class="best-sellers-data">
@@ -52,6 +169,24 @@
             </div>
         </div>
     </div>
+    <div class="share-popup share-popup-hide">
+        <div class="share-popup-header">
+            <div>SHARE WITH FRIENDS</div>
+            <div class="share-popup-close"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="share-popup-body">
+            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-weibo"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-weixin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-reddit-alien"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-gamepad"></i></a></li>
+        </div>
+    </div>
+
+<!-----------------Info section----------------->    
     <div class="sale-info">
         <h5>Designer Sale Shopping Guide 
             <br>
@@ -90,7 +225,7 @@
                     <h5>Make your shopping list using Fashion Hub Alerts in advance 
                         so that you can easily find the things you want to buy on the big day.
                     </h5>
-                    <br>
+                    <br><br>
                     <a class="info-anchor" href="#">Visit My Alerts</a>
                 </div>
             </div>
@@ -107,6 +242,85 @@
             </div>
         </div>
     </div>
+
+<!------------------- Help section ------------------->
+    <hr>
+
+
+    <div id="section7">
+
+        <div class="sec7">
+            <h2>CUSTOMER CARE</h2>
+            <a href="#">Shopper Protection</a>
+            <a href="#">Loyalty Program</a>
+            <a href="#">Help Center</a>
+            <a href="#">Size Guides</a>
+            <a href="#">Contact Us / Feedback</a>
+            <a href="#">Shipping / Returns</a>
+        </div>
+
+        <div class="sec7">
+            <h2>INFORMATION</h2>
+            <a href="/about.html">About Us</a>
+            <a href="#">Influencer Program</a>
+            <a href="#">Partner Stores</a>
+            <a href="#">Sitemap</a>
+        </div>
+
+        <div class="sec7">
+            <h2>LEGAL</h2>
+            <a href="#">Terms Of Use</a>
+            <a href="#">Disclosure</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Community Guidelines</a>
+        </div>
+
+        <div class="sec7-4">
+            <h2>CONNECT WITH US</h2>
+            <a
+                href="https://appleid.apple.com/auth/authorize?client_id=com.modesens&redirect_uri=https%3A%2F%2Fmodesens.com%2Faccounts%2Fapple%2Flogin%2Fcallback%2F&response_mode=form_post&scope=name%20email&response_type=code%20id_token&state=uWQ9QcwNFx01"><i
+                    class="fa-brands fa-apple"></i></a>
+            <a href="#"><i class="fa-brands fa-android"></i></a>
+            <a href="#"><i class="fa-solid fa-puzzle-piece"></i></a>
+        </div>
+
+        <div class="sec7 sec7-last">
+            <h2>NEWSLETTER SIGN UP</h2>
+            <input type="email" name="email" id="email" placeholder="Email Address">
+            <hr>
+            <div>
+                Men's<input type="radio" name="mygender" id="gender"> Women's<input type="radio" name="mygender" id="gender">
+            </div>
+            <button class="btnlast">SUBMIT</button>
+        </div>
+
+    </div>
+    <hr>
+    <h5 id="help-h5">When you follow our links to visit a brand or retailer's website or make a purchase, Fashion Hub may earn a
+        commission.</h5>
+
+
+
+    <!------------------- Footer section ------------------->
+    <hr>
+    <div id="footer">
+        <div class="one"><span>M</span>
+            <p>© 2022, JS-ECOM</p>
+        </div>
+        <div class="two">
+            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-weibo"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-weixin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-reddit-alien"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-gamepad"></i></a></li>
+        </div>
+    </div>
+
 </body>
+<script src="https://kit.fontawesome.com/b06a377e67.js" crossorigin="anonymous"></script>
 <script src="sale.js"></script>
+<script src="index.js"></script>
 </html>
