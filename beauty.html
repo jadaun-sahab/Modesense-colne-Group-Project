@@ -1,56 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion-hub</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <title>Beauty</title>
+    <link rel="stylesheet" href="/beauty.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/responsive.css">
     <script src="https://kit.fontawesome.com/b06a377e67.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Baloo+2&family=Bebas+Neue&family=Courgette&family=Dancing+Script:wght@400;600&family=Dosis:wght@300&family=Lobster&family=Lobster+Two&family=Noto+Serif+Display:wght@100&family=Playfair+Display:ital@1&family=Ramaraja&family=Shadows+Into+Light&family=Ubuntu:wght@300&display=swap');
-    </style>
-    <style>
-        body {
-            background: linear-gradient(
-    to right,
-    rgb(240, 210, 210),
-    rgb(244, 212, 239),
-    rgb(219, 219, 248)
-  );
-        }
 
-        .feedback {
-            padding-top: 100px;
-        }
-
-        .feedback h2 {
-            margin: 20px;
-            text-align: center;
-            font-size: 4rem;
-        }
-
-        #feedbackfc {
-            background-color: white;
-            padding: 30px;
-            display: flex;
-            box-shadow: 2px 2px 8px black;
-            height: 50vh;
-            width: 70%;
-            margin: 0 auto;
-            font-size: 20px;
-        }
+        
     </style>
 </head>
-
 <body>
-
-
-    <!------------------- navbar starts here ------------------->
-
-
+<div class="container">
     <div id="navbar">
         <i class="fa-solid fa-bars" onclick="menuitem()"></i>
         <div class="logo">
@@ -83,7 +49,7 @@
                         <li><a href="#">PRE-OWNED</a></li>
                     </ul>
                 </li>
-
+             
                 <li><a href="/kids.html">KIDS</a>
                     <ul>
                         <li><a href="#">SHOP ALL</a></li>
@@ -95,7 +61,7 @@
 
                     </ul>
                 </li>
-                <li><a href="/beauty.html">BEAUTY</a>
+                <li><a href="/beauty.css">BEAUTY</a>
                     <ul>
                         <li><a href="#">SHOP ALL</a></li>
                         <li><a href="#">WOMEN'S BEAUTY</a></li>
@@ -109,7 +75,7 @@
                 <li><a href="/feedback.html">FEEDBACK</a>
 
                 </li>
-                <li><a href="community.html">COMMUNITY</a>
+                <li><a href="/community.html">COMMUNITY</a>
                     <ul>
                         <li><a href="#">DISCOVER</a></li>
                         <li><a href="#">BLOGS</a></li>
@@ -129,16 +95,9 @@
             </ul>
         </div>
     </div>
-
-
-
-    <!------------------- navbar ends here ------------------->
-
-
-
     <div id="login">
         <div class="login-1">
-            <h1>JS-ecom</h1>
+            <h1>Fashion hub</h1>
             <p>BY SHOPPERS FOR SHOPPERS</p>
             <ol><i class="fa-solid fa-bag-shopping"></i> COMPARE ACREOSS 500+ STORES</ol>
             <ol><i class="fa-solid fa-bell"></i> GET ALERTS ON YOUR ITEMS</ol>
@@ -166,36 +125,161 @@
             <a href="/login.html">Already have an account? Please sign in.</a>
         </div>
     </div>
-
-
-
-    <!------------------- login ends here ------------------->
-
-
-
-    <div class="feedback">
-        <h2>FeedBacks</h2>
-
-        <div id="feedbackfc">
-
+    <div class="heading">
+        <div>
+        <h1>Designer Beauty</h1>
+        &nbsp;
+        &nbsp;
+        <p>Shop designer beauty with price comparison across 500+ stores in one place. Discover the latest designer beauty at ModeSens.</p>
         </div>
     </div>
+    <div class="text">
+        <pre><b>  FASHION HUB /SHOP /BEAUTY </b></pre>
+    </div>
+    <div class="box">
+        <div class="filter">
+            <input type="text" name="" oninput = "search()" id="search" placeholder="  Search for products,brands and more">
+            &nbsp;
+            <img id="imgsearch" alt="SEARCH LOGO" src="https://cdn.modesens.com/static/img/search_keyword_icon_20180510.svg"/>
+            <pre id="filterby">FILTER BY:            <button id="reset">RESET</button> </pre>
+            <select id="brand">
+                <option value="Brands">Brands</option>
+                <option value="Gucci">Gucci</option>
+                <option value="Estee">Estee</option>
+                <option value="Forest">Forest</option>
+                <option value="Carolina">Carolina</option>
+                <option value="Chanel">Chanel</option>
+            </select>
+            <select id="categories">
+                <option value="Categories">Categories</option>
+                <option value="Mask">Mask</option>
+                <option value="Serum">Serum</option>
+                <option value="Skincare">Skincare</option>
+                <option value="Perfume">Perfume</option>
+                <option value="Lipstick">Lipstick</option>
+            </select>
+            <select onchange="handleSort()" id="price">
+                <option value="Price">Price</option>
+                <option value="LTH">Low To High</option>
+                <option value="HTL">High To Low</option>
+            </select>
+            <pre id="format">
 
 
+        <b><u>Related Category</u></b>
+
+
+        Women Beauty
+
+        Men Grooming
+
+        Kids Care
+
+        Beauty Sale
+
+        Pre-Owned Beauty
+
+
+        <b><u>Related Searches</u></b>
+
+
+        Fendi Beauty
+
+        Valentino Beauty
+
+        Balenciaga Beauty
+
+        Saint Laurent Beauty
+
+        Prada Beauty
+
+        Versace Beauty
+
+        Burberry Beauty
+
+        Givenchy Beauty
+
+        Alexander Mcqueen Beauty
+
+        Gucci Beauty
+            </pre>
+        </div>
+        <div class="products"></div>
+    </div>
+    &nbsp;
+    &nbsp;
+</div>
+<div id="section7">
+
+    <div class="sec7">
+        <h2>CUSTOMER CARE</h2>
+        <a href="#">Shopper Protection</a>
+        <a href="#">Loyalty Program</a>
+        <a href="#">Help Center</a>
+        <a href="#">Size Guides</a>
+        <a href="#">Contact Us / Feedback</a>
+        <a href="#">Shipping / Returns</a>
+    </div>
+
+    <div class="sec7">
+        <h2>INFORMATION</h2>
+        <a href="/about.html">About Us</a>
+        <a href="#">Influencer Program</a>
+        <a href="#">Partner Stores</a>
+        <a href="#">Sitemap</a>
+    </div>
+
+    <div class="sec7">
+        <h2>LEGAL</h2>
+        <a href="#">Terms Of Use</a>
+        <a href="#">Disclosure</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Community Guidelines</a>
+    </div>
+
+    <div class="sec7-4">
+        <h2>CONNECT WITH US</h2>
+        <a
+            href="https://appleid.apple.com/auth/authorize?client_id=com.modesens&redirect_uri=https%3A%2F%2Fmodesens.com%2Faccounts%2Fapple%2Flogin%2Fcallback%2F&response_mode=form_post&scope=name%20email&response_type=code%20id_token&state=uWQ9QcwNFx01"><i
+                class="fa-brands fa-apple"></i></a>
+        <a href="#"><i class="fa-brands fa-android"></i></a>
+        <a href="#"><i class="fa-solid fa-puzzle-piece"></i></a>
+    </div>
+
+    <div class="sec7 sec7-last">
+        <h2>NEWSLETTER SIGN UP</h2>
+        <input type="email" name="email" id="email" placeholder="Email Address">
+        <hr>
+        <div>
+            <span><input type="radio" name="male" id="male"> Women's</span>
+            <span><input type="radio" name="female" id="female">Men's</span>
+        </div>
+        <button class="btnlast">SUBMIT</button>
+    </div>
+
+</div>
+<hr>
+<h5>When you follow our links to visit a brand or retailer's website or make a purchase, ModeSens may earn a
+    commission.</h5>
+<hr>
+<div id="footer">
+    <div class="one"><span>F</span>
+        <p>© 2022, Fashion hub</p>
+    </div>
+    <div class="two">
+        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-weibo"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-weixin"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-reddit-alien"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-gamepad"></i></a></li>
+    </div>
+</div>
 </body>
-<script>
-    let fedb = localStorage.getItem("massage")
-    //  document.getElementsByTagName("li").innerText=fedb
-    document.getElementById("feedbackfc").innerText = fedb
-</script>
 
-<!-- --------------java script----------------- -->
 <script src="/index.js"></script>
-<!-- --------------java script----------------- -->
-
+<script src="/beauty.js"></script>
 
 </html>
-
-
-
-<!-- //   ---------------------*---------------------*---------------------*--------------------- -->

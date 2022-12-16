@@ -1,0 +1,98 @@
+#comoption {
+    
+    display: flex;
+    justify-content: space-around;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-top: 40px;
+}
+#comoption h2{
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+#allpost{
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto; 
+    gap: 15px;
+    justify-content: space-between;
+   
+    margin: auto;
+    width: 93%;
+
+}
+.posts{
+    border: 1px solid rgb(171, 171, 171);
+    width: 100%;
+    align-items: center;
+}
+#first{
+    display: flex;
+    align-items: center;
+}
+#first>img{
+    margin: 1%;
+    margin-right: 3%;
+    width: 10%;
+    border-radius: 50%;
+}
+#first>button{
+    height: 40px;
+    width: 90px;
+    margin-left: 20%;
+    background-color: white;
+    border: 1px solid rgb(45, 45, 45);
+}
+#first>button:hover{
+    background-color: black;
+    color: white;
+}
+#first>p{
+    width: 40%;
+}
+#second{
+    height: 91%;
+    width: 100%;
+}
+#second>img{
+    height: 100%;
+    width: 100%;
+}
+#loadmore{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#loadmore>button{
+    height: 40px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: white;
+    
+}
+#loadmore>button:hover{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (min-width:301px) and (max-width:1200px){
+    #allpost{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto; 
+    }
+}
+@media screen and (min-width:50px) and (max-width:300px){
+    #allpost{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto; 
+    }
+}
+@media screen and (min-width:50px) and (max-width:1000px){
+
+#comoption{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+}
+}

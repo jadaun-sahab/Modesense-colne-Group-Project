@@ -36,7 +36,7 @@
   .login3 {
     width: 60%;
   }
-  .login h3{
+  .login h3 {
     width: 90%;
   }
   #login {
@@ -60,6 +60,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  .section5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
   #section7 {
     display: grid;
     margin: auto;
@@ -79,12 +83,10 @@
   }
 }
 
-
 /* <!------------------- screen-1 ends here -------------------> */
 
-
 @media (max-width: 850px) {
-  .one span{
+  .one span {
     display: none;
   }
   #container {
@@ -126,6 +128,15 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .section5 {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sec5 {
+    margin: 0 auto;
+  }
   #section6 {
     display: flex;
     flex-direction: column;
@@ -138,16 +149,14 @@
   #section7 {
     grid-template-columns: repeat(3, 1fr);
   }
- 
+
   #feedback {
     width: 90%;
     left: 1em;
   }
 }
 
-
 /* <!------------------- screen-2 ends here -------------------> */
-
 
 @media (max-width: 700px) {
   .btna {
@@ -155,11 +164,18 @@
   }
 }
 
-
 /* <!------------------- screen-3 ends here -------------------> */
 
-
 @media (max-width: 600px) {
+  
+  .nav2 ul input{
+    display: block;
+    position: absolute;
+    top: 2.5rem;
+    left: 3rem;
+    margin: 0px auto;
+    width: 80%;
+  }
   #login {
     height: 100%;
     left: 1rem;
@@ -188,6 +204,17 @@
   .btn {
     font-size: 2rem;
     padding: 0;
+  }
+  .section5 {
+    display: block;
+  }
+  .sec5 {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+  }
+  .sec5 img {
+    width: 80%;
   }
   .sec6 h2 {
     width: 90%;
@@ -225,9 +252,7 @@
   }
 }
 
-
 /* <!------------------- screen-4 ends here -------------------> */
-
 
 @media (max-width: 500px) {
   .logo {
@@ -265,16 +290,21 @@
     width: 90%;
     left: 1em;
   }
-  #loginbtn{
+  #loginbtn {
     width: 80%;
   }
 }
 
-
 /* <!------------------- screen-5 ends here -------------------> */
 
-
 @media (max-width: 350px) {
+  .nav2 ul input{
+    display: block;
+    position: absolute;
+    top: 2.5rem;
+    left: 3rem;
+    width: 70%;
+  }
   .btn {
     font-size: 1rem;
     padding: 0;
