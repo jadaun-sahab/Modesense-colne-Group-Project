@@ -81,23 +81,23 @@
     width: 50%;
     left: 18em;
   }
-  .products{ 
+  .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     max-width: 1240px;
-}
+  }
 }
 
 /* <!------------------- screen-1 ends here -------------------> */
 
 @media (max-width: 850px) {
-  .products{ 
+  .products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     max-width: 1240px;
-}
+  }
   .one span {
     display: none;
   }
@@ -174,22 +174,25 @@
   .btna {
     width: 50%;
   }
-  .box{
-    display: block;
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    max-width: 1240px;
   }
-  .filter{
-    display: block;
+
+  .filter2-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
-  .filter-2{
-    margin: 0 auto;
-    display: flex;
-  }
-  .filter-2 li{
+  .filter-2 li {
     list-style: none;
-    font-size: .6rem;
+    font-size: 0.6rem;
+
     width: 100%;
   }
-  .filter-2 ol{
+  .filter-2 ol {
     font-size: 1rem;
   }
 }
@@ -197,8 +200,25 @@
 /* <!------------------- screen-3 ends here -------------------> */
 
 @media (max-width: 600px) {
-  
-  .nav2 ul input{
+  .filter {
+    display: flex;
+  }
+  .box {
+    display: block;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    width: 95%;
+  }
+  .product img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  .nav2 ul input {
     display: block;
     position: absolute;
     top: 2.5rem;
@@ -285,6 +305,13 @@
 /* <!------------------- screen-4 ends here -------------------> */
 
 @media (max-width: 500px) {
+  .filter2-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .filter {
+    display: block;
+  }
   .logo {
     width: 100%;
   }
@@ -328,7 +355,7 @@
 /* <!------------------- screen-5 ends here -------------------> */
 
 @media (max-width: 350px) {
-  .nav2 ul input{
+  .nav2 ul input {
     display: block;
     position: absolute;
     top: 2.5rem;
