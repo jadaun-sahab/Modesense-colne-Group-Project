@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Hub Cart</title>
+</head>
+<style>
+    #cartcont{
+        margin:50px auto;
+        width:80%;
+    }
+    #cartcont>div{
+        display:flex;
+        margin:20px auto;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+    #cartcont>div>div:nth-child(1){
+        width:40%;
+        height:350px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    #cartcont>div>div:nth-child(1)>img{
+        width:100%;
+        height:350px;
+    }
+    #cartcont>div>div:nth-child(1)>img:hover{
+        cursor:zoom-in;
+    }
+    #cartcont>div>div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+    }
+    #cartcont>div>div:nth-child(2)>h2,
+    #cartcont>div>div:nth-child(2)>p{
+        margin-bottom:0px;
+    }
+    #cartcont>div>div:nth-child(2)>button{
+        width:150px;
+        margin:20px 0;
+        font-size: 16px;
+        padding: 8px;
+        color: white;
+        border: none;
+        background-color: rgb(226, 79, 136) ;
+    }
+    #cartcont>div>div:nth-child(2)>div{
+        width:100px;
+        display: flex;
+        margin:10px 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #cartcont>div>div:nth-child(2)>div>button{
+        font-size: 20px;
+        padding: 5px 10px 5px 10px;
+        color: white;
+        border: none;
+        background-color: rgb(226, 79, 136) ;
+    }
+    #carttotal{
+        margin:50px auto;
+        text-align: center;
+        padding:5px 15px 5px 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width:17%;
+        background-color: rgb(226, 79, 136) ;
+        color: white;
+    }
+</style>
+<body>
+    <div id="carttotal">
+        <h2>BAG TOTAL: Rs. &nbsp;<span id="total">0</span></h2>
+    </div>
+    <div id="cartcont">
+        <!-- append cartdata -->
+    </div>
+</body>
+</html>
+<script>
+    let cartData=JSON.parse(localStorage.getItem("cart"));
+    displayCart(cartData);;
+    totaCost();
+
+    function displayCart(data){
+        document.querySelector("#cartcont").innerHTML="";
+        data.forEach((elem,index)=>{
+            let maindiv=document.createElement("div");
+            let leftdiv=document.createElement("div");
+            let rightdiv=document.createElement("div");
+
+            let pic=document.createElement("img");
+            pic.setAttribute("src",elem.avatar);
+            let title=document.createElement("h2")
+            title.innerText=elem.title;
+            let qty=document.createElement("p");
+            qty.innerText=elem.qty;
+            let rating=document.createElement("p");
+            rating.innerText=elem.rating;
+            let price=document.createElement("h2");
+            price.innerText=elem.price;
+
+            let calcdiv=document.createElement("div");
+            let plus=document.createElement("button");
+            plus.innerText="+";
+            plus.addEventListener("click",function(){
+            span.innerText++;
+            totaCost();
+            })
+
+            let span=document.createElement("span");
+            span.setAttribute("class","qty");
+            span.innerText=1;
+
+            let minus=document.createElement("button");
+            minus.innerText="-";
+            minus.addEventListener("click",function(){
+            if(span.innerText>=1){  
+            span.innerText--;
+            }
+            totaCost();
+            })
+
+            let del=document.createElement("button");
+            del.innerText="REMOVE ITEM";
+            del.addEventListener("click",function(){
+                deleteData(cartData,index);
+            })
+
+            calcdiv.append(minus,span,plus);
+            rightdiv.append(title,qty,rating,price,calcdiv,del);
+            leftdiv.append(pic);
+            maindiv.append(leftdiv,rightdiv)
+            document.querySelector("#cartcont").append(maindiv);
+        })
+    }
+
+    function totaCost(){
+      let qty=document.querySelectorAll(".qty");
+      let sum=0;
+      for (let i=0; i<=qty.length-1; i++){
+        if(cartData.length==0){
+          sum=0;
+        }else{
+          sum=sum+(Number(qty[i].innerText)*cartData[i].price);
+        }
+      }
+      console.log(sum);
+      document.querySelector("#total").innerText=sum;
+    }
+
+    document.querySelector("#search").addEventListener("input",function(){
+        let searchValue=document.querySelector("#search").value;
+        let searchData=cartData.filter((elem,index)=>{
+            return elem.title.toLowerCase().includes(searchValue.toLowerCase());
+        })
+        displayCart(searchData);
+    })
+
+    function deleteData(array,index){
+        array.splice(index,1);
+        localStorage.setItem("cart",JSON.stringify(array));
+        displayCart(array);
+        totaCost();
+    }
+</script>

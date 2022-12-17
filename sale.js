@@ -459,7 +459,7 @@ function renderGiftDeals(data) {
     giftDealContainer.innerHTML="";
     let newBannerData=data.map((item)=>{
         return `
-        <div class="gift-deals-div hover-pointer">
+        <div class="gift-deals-div hover-pointer redirect">
           <img
             src=${item}
             alt="Banner"
@@ -487,7 +487,7 @@ function renderBestSellers(data){
                        ${item.exclusive ? `<button class="hover-pointer"> EXCLUSIVE </button>`: ""}
                     </div>
                     <div>
-                       <button class="hover-pointer"> SHOP NOW </button>
+                       <button class="hover-pointer redirect"> SHOP NOW </button>
                        <button class="hover-pointer share-click">
                           <img alt="SHARE LOGO" src="https://cdn.modesens.com/static/img/20190805Vector.svg" />
                        </button>
@@ -514,6 +514,13 @@ function renderBestSellers(data){
     let sharePopup=document.querySelector(".share-popup");
     sharePopup.classList.add("share-popup-hide");
     })
+
+    let shopButtons=document.querySelectorAll(".redirect");
+    for(let shopButton of shopButtons){
+        shopButton.addEventListener("click",()=>{
+            window.location.href="womens.html";
+        })
+    }
 }
 
 /*---------------------Div switch functionality------------------*/
