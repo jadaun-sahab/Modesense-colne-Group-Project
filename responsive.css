@@ -92,6 +92,9 @@
 /* <!------------------- screen-1 ends here -------------------> */
 
 @media (max-width: 850px) {
+  .carttotal{
+    width: 55%;
+  }
   .products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -305,6 +308,9 @@
 /* <!------------------- screen-4 ends here -------------------> */
 
 @media (max-width: 500px) {
+  .carttotal{
+    width: 75%;
+  }
   .filter2-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -313,7 +319,7 @@
     display: block;
   }
   .logo {
-    width: 100%;
+    width: 50%;
   }
   .sec3 {
     display: grid;
@@ -355,12 +361,8 @@
 /* <!------------------- screen-5 ends here -------------------> */
 
 @media (max-width: 350px) {
-  .nav2 ul input {
-    display: block;
-    position: absolute;
-    top: 2.5rem;
-    left: 3rem;
-    width: 70%;
+  .carttotal{
+    width: 80%;
   }
   .btn {
     font-size: 1rem;
@@ -376,10 +378,6 @@
   }
   .sec6 h2 {
     font-size: 1.2rem;
-  }
-  .logo {
-    text-align: left;
-    width: 55%;
   }
   #feedback {
     width: 90%;
