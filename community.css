@@ -76,19 +76,19 @@
     color: white;
 }
 
-@media screen and (min-width:301px) and (max-width:1200px){
+@media  (max-width:1200px){
     #allpost{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: auto; 
     }
 }
-@media screen and (min-width:50px) and (max-width:300px){
+@media (max-width:300px){
     #allpost{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: auto; 
     }
 }
-@media screen and (min-width:50px) and (max-width:1000px){
+@media (max-width:1000px){
 
 #comoption{
     display:grid;
