@@ -1,98 +1,132 @@
 #comoption {
-    
+
     display: flex;
     justify-content: space-around;
     padding-left: 30%;
     padding-right: 30%;
     margin-top: 40px;
 }
-#comoption h2{
+
+#comoption h2 {
     margin-bottom: 30px;
     font-family: sans-serif;
 }
-#allpost{
-   
+
+#allpost {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto; 
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     justify-content: space-between;
-   
     margin: auto;
     width: 93%;
 
 }
-.posts{
+
+.posts {
     border: 1px solid rgb(171, 171, 171);
-    width: 100%;
     align-items: center;
 }
-#first{
+
+#first {
+    margin: 0;
     display: flex;
     align-items: center;
 }
-#first>img{
+
+#first>img {
     margin: 1%;
     margin-right: 3%;
     width: 10%;
     border-radius: 50%;
 }
-#first>button{
+
+#first>button {
     height: 40px;
     width: 90px;
     margin-left: 20%;
     background-color: white;
     border: 1px solid rgb(45, 45, 45);
 }
-#first>button:hover{
+
+#first>button:hover {
     background-color: black;
     color: white;
 }
-#first>p{
+
+#first>p {
     width: 40%;
 }
-#second{
-    height: 91%;
+
+#second {
+    margin: 0;
     width: 100%;
 }
-#second>img{
-    height: 100%;
+
+#second>img {
+
     width: 100%;
 }
-#loadmore{
+
+#loadmore {
     margin-top: 40px;
     text-align: center;
     margin-bottom: 50px;
 }
-#loadmore>button{
+
+#loadmore>button {
     height: 40px;
     width: 100px;
     border: 1px solid black;
     background-color: white;
-    
 }
-#loadmore>button:hover{
+
+#loadmore>button:hover {
     background-color: black;
     color: white;
 }
 
-@media  (max-width:1200px){
-    #allpost{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: auto; 
+@media (max-width:1200px) {
+    #comoption h2 {
+        font-size: 1rem;
+        margin:  20px;
     }
-}
-@media (max-width:300px){
-    #allpost{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: auto; 
-    }
-}
-@media (max-width:1000px){
 
-#comoption{
-    display:grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: auto;
+    #allpost {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .posts {
+        margin: 0 auto;
+
+        width: 80%;
+    }
+
+    #first {
+        width: 80%;
+    }
+
+    #second {
+        width: 80%;
+    }
+
 }
+
+@media (max-width:700px) {
+    #comoption h2 {
+        font-size: 1rem;
+        margin:  10px 0px;
+    }
+    #comoption  {
+        font-size: 1rem;
+        margin:  10px 0px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+
+    #allpost {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
 }
