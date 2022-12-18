@@ -36,7 +36,11 @@ function displayData(bag){
 }
 
 document.querySelector("#reset").addEventListener("click",function(event){
-        displayData(bag);    
+    document.querySelector("#brand").value = "Brands";
+    document.querySelector("#categories").value = "Categories";
+    document.querySelector("#price").value = "Price";
+    displayData(bag);    
+
 });
 
 document.querySelector("#brand").addEventListener("click",function(event){
