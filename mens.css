@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: linear-gradient(
+      to right,
+      rgb(210, 238, 240),
+      rgb(241, 174, 231),
+      rgb(152, 152, 234)
+    );
+  }
+  
+  .container {
+    display: grid;
+  }
+  .heading {
+    padding-top: 100px;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  .heading p {
+    margin: 10px auto;
+    padding: 0 16px;
+  }
+  
+  .text {
+    margin-top: 80px;
+    margin-left: 0px;
+    font-size: 17px;
+  }
+  .box {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    color: #555;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  .product {
+    box-shadow: 2px 2px 12px rgb(255, 253, 253);
+    margin-right: 20px ;
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+    height: 100%;
+  }
+  
+  .product:hover>img{
+      box-shadow: 2px 2px 14px rgb(82, 82, 82); 
+  }
+  .product img {
+    width: 100%;
+    height: 400px;
+    display: block;
+  }
+  .title {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .product :hover {
+    cursor: pointer;
+  }
+  .product .qty {
+    text-align: center;
+  }
+  .product .button {
+    margin: 6px  auto;
+    display: block;
+    width: 60%;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    background-color: #3e628f;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px rgb(17, 17, 18);
+  }
+  .product .button:active {
+    box-shadow: 0px 0px 0px white;
+    transform: translateY(3px);
+  }
+  .product .button i {
+    padding-left: 10px;
+  }
+  .filter {
+    margin: 0 20px;
+  }
+  #reset {
+    margin-left: 5rem;
+    border: 1px solid black;
+  }
+  #search {
+    margin-top: 10px;
+    width: 250px;
+    height: 50px;
+    margin-left: 8px;
+  }
+  .filter select {
+    width: 250px;
+    height: 30px;
+    margin-left: 8px;
+    margin-top: 10px;
+  }
+  #reset {
+    width: 80px;
+    height: 25px;
+    background-color: white;
+    border: none;
+  }
+  #filterby {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  #format {
+    font-size: 15px;
+  }
+  .filter-2 {
+    margin: 5px;
+  }
+  
