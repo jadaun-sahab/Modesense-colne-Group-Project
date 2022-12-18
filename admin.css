@@ -1,0 +1,210 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+h1 {
+     margin: 20px 0;
+     text-align: center;
+}
+
+.user {
+     position: absolute;
+     right: 0rem;
+     top: 1em;
+     display: flex;
+}
+.user h2{margin-top: 1rem;
+     margin-left: 2rem;
+}
+
+.user img {
+ margin: 2px;
+     border-radius: 50%;
+     width: 50px;
+}
+
+body {
+     background: linear-gradient(to right,
+               rgb(210, 238, 240),
+               rgb(241, 174, 231),
+               rgb(152, 152, 234));
+}
+
+.mainbox {
+     display: flex;
+}
+
+.child1 {
+     box-shadow: 2px 2px 9px black;
+     width: 19%;
+     display: block;
+     margin: 20px 20px 20px 0;
+   
+}
+.fa-solid{
+     animation-name: js;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+}
+@keyframes js {
+     0% {
+          rotate: 2deg;
+     }
+     10% {
+          rotate: 36deg;
+     }
+     20% {
+          rotate: 72deg;
+     }
+     20% {
+          rotate: 108deg;
+     }
+     40% {
+          rotate: 144deg;
+     }
+   
+     50% {
+          rotate: 180deg;
+     }
+   
+     60% {
+          rotate: 216deg;
+     }
+     70% {
+          rotate: 252deg;
+     }
+     80% {
+          rotate: 288deg;
+     }
+     90% {
+          rotate: 324deg;
+     }
+     100% {
+          rotate: 360deg;
+     }
+
+   }
+.child1 li {
+     box-shadow: 2px 2px 15px rgb(175, 174, 174);
+     transition: all .3s;
+     list-style: none;
+     font-size: 1.5rem;
+     padding: 15px 0;
+     margin: 20px 0;
+}
+
+.child1 li a {
+     color: black;
+     text-decoration: none;
+}
+
+.child1 .fa-solid {
+     text-shadow: 2px 2px 12px rgba(1, 49, 145, 0.989);
+     color: white;
+     margin: 0 16px;
+}
+
+.child1 li:hover {
+     box-shadow: 2px 2px 21px rgb(175, 174, 174);
+     transform: translateX(10px);
+}
+
+.child2 {
+     margin-bottom: 4rem;
+     width: 70%;
+     box-shadow: 2px 2px 21px rgb(255, 251, 251);
+}
+
+.child2-1 {
+     display: flex;
+}
+
+.box {
+     padding: 30px;
+     height: 175px;
+     display: flex;
+     width: 24%;
+     margin: 10px auto;
+     border-radius: 10px;
+     box-shadow: 2px 2px 21px rgb(255, 251, 251);
+     background-color: #fff;
+}
+
+.box>div:nth-child(1) {
+     width: 65%;
+}
+
+.box1 {
+     background-color: rgb(176, 4, 255);
+     box-shadow: 2px 2px 12px rgb(0, 0, 0);
+     border-radius: 50%;
+     height: 110px;
+     width: 150px;
+     padding-left: 2.5rem;
+     font-size: 2.5rem;
+     padding-top: 3rem;
+
+}
+
+.box2 {
+     padding-left: 1.7rem;
+     font-size: 2.5rem;
+     padding-top: 2.5rem;
+     padding-bottom: -2rem;
+     background-color: rgb(176, 4, 255);
+     box-shadow: 2px 2px 12px rgb(0, 0, 0);
+     border-radius: 50%;
+     height: 80px;
+     width: 90px;
+}
+.box h2{
+     margin: 10px 0;
+}
+
+.box2-1{
+     display: block;
+     font-size: 1.2rem;
+     margin-top: 4em;
+     font-weight: bold;
+}
+
+.box3 {
+     padding-left: 1.7rem;
+     font-size: 2rem;
+     padding-top: 2rem;
+     background-color: rgb(176, 4, 255);
+     box-shadow: 2px 2px 12px rgb(0, 0, 0);
+     border-radius: 50%;
+     height: 70px;
+     width: 70px;
+}
+
+.recent {
+     display: flex;
+     margin: 0 auto;
+     width: 70%;
+}
+
+.recent1 ul {
+     text-shadow: 2px 2px 2px white;
+     font-size: 1.8rem;
+     margin: 20px;
+}
+
+.recent1 li {
+     padding: 2px 5px;
+     width: 90%;
+     font-size: 1.6rem;
+     list-style: none;
+     margin: 4px 18px;
+     border: .5px solid rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
+}
+
+.recent1 li a {
+     color: black;
+}
+.fa-arrow-right-from-bracket{
+     rotate: 180deg;
+}
