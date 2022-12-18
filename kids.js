@@ -6,25 +6,31 @@ fetch("API/kids.json")
     displayData(bag);
 })
 
+let cartarr=[];
 function displayData(bag){ 
     let xyz = document.querySelector(".products");
     xyz.innerHTML = "";
     
-    let newArray = bag.map((item) => {
-        return `<div class="product">
-        <img src="${item.avatar}" alt="${item.avatar}">  
+    bag.forEach((item) => {
+        let div=document.createElement("div");
+        div.setAttribute("class","product");
+        div.innerHTML=
+        `<img src="${item.avatar}" alt="${item.avatar}">  
         <p class="title">${item.title}</p>
         <p class="price">
             <span>&#8377;</span>
             <span>${item.price}</span>  
         </p> 
         
-        <p class="rating">Rating: ${item.rating}</p>
-        <button class="button" style="font-size:17px">Add to cart<i class="fa fa-shopping-cart"></i></button>
-    </div>`;
-    })
-    
-    xyz.innerHTML = newArray.join("");
+        <p class="rating">Rating: ${item.rating}</p>`;
+    let btn=document.createElement("button");
+    btn.setAttribute("class","button")
+    btn.innerText="Add to cart"
+    btn.addEventListener("click",function(){
+        cartarr.push(item)
+            localStorage.setItem("cart",JSON.stringify(cartarr));
+        });
+    div.append(btn);
+    xyz.append(div);
+})
 }
-
-document.querySelector(".products").innerHTML = bag;
