@@ -321,18 +321,14 @@
 }
 .seller-logo{
     width:30%;
-    /* border:1px solid blue; */
     display: flex;
     align-items: center;
 }
 .seller-logo>img{
     width:100%;
-    /* border:1px solid blue; */
 }
 .seller-desc{
     width:65%;
-    /* height:120px; */
-    /* border:1px solid green; */
 }
 .seller-desc>:nth-child(1){
     height:50%;
@@ -345,20 +341,17 @@
 .seller-desc-buttons{
     margin:5px auto;
     height:50%;
-    /* border:1px solid red; */
     display: flex;
     align-items: center;
 }
 .seller-desc-buttons>:nth-child(1){
     width:55%;
-    /* border: 1px solid cyan; */
     display: flex;
     align-items: center;
     justify-content: left;
 }
 .seller-desc-buttons>:nth-child(2){
     width:45%;
-    /* border: 1px solid cyan; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -437,7 +430,6 @@
     line-height: 30px;
 }
 .all-info-cont{
-    /* border: 1px solid black; */
     width:90%;
     margin:40px auto;
     display: grid;
@@ -449,14 +441,12 @@
     justify-content: space-evenly;
 }
 .info-img-cont{
-    /* border:1px solid blue; */
     width:20%;
 }
 .info-img-cont>img{
     margin:30px;
 }
 .info-details-cont{
-    /* border:1px solid red; */
     width:60%;
     color: #6c757d
 }
@@ -473,6 +463,9 @@
 
 
 /*----------------------------------Help & Feedback---------------------*/
+
+
+
 #section7 {
     background: linear-gradient(
       to right,
