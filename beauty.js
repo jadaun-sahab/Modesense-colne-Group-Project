@@ -27,6 +27,7 @@ function displayData(bag){
     btn.setAttribute("class","button")
     btn.innerText="Add to cart"
     btn.addEventListener("click",function(){
+        alert("Product Added To Cart");
         cartarr.push(item)
             localStorage.setItem("cart",JSON.stringify(cartarr));
         });
