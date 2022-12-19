@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,9 @@
      <link rel="stylesheet" href="admin.css">
      <script src="https://kit.fontawesome.com/b06a377e67.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+     <i class="fa-solid fa-bars" onclick="menuitemadmin()"></i>
      <h1>DASHBOARED</h1>
      <div class="user">
           <h2>Admin</h2>
@@ -17,7 +20,7 @@
 
 
      <div class="mainbox">
-          <div class="child1">
+          <div class="child1" id="child1">
                <li><a href="#"><i class="fa-solid fa-chart-line"></i>DASHBOARED</a></li>
                <li><a href="#"><i class="fa-solid fa-person"></i>COUSTMER</a></li>
                <li><a href="#"><i class="fa-solid fa-chart-simple"></i>ANALYTICS</a></li>
@@ -26,7 +29,6 @@
                <li><a href="#"><i class="fa-solid fa-box"></i>PRODUCT</a> </li>
                <li><a href="#"><i class="fa-solid fa-bars-progress"></i>REPORT</a></li>
                <li><a href="#"><i class="fa-solid fa-gear"></i>SETTINGS</a></li>
-               
                <li><a href="/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>LOGOUT</a></li>
           </div>
           <div class="child2">
@@ -40,8 +42,7 @@
                          </div>
                          <div class="box1">91%</div>
                     </div>
-                    
-                    
+
                     <div class="box">
                          <div>
                               <h2>INCOME</h2>
@@ -50,7 +51,6 @@
                          </div>
                          <div class="box2">49%</div>
                     </div>
-     
 
                     <div class="box">
                          <div>
@@ -63,6 +63,7 @@
 
                </div>
                <h1>Recent Order</h1>
+               
                <div class="recent">
                     <div class="recent1">
                          <ul>NAME</ul>
@@ -119,4 +120,20 @@
 
 
 </body>
+<script>
+
+     let admin = document.getElementById("child1")
+     admin.style.display = "none"
+
+
+     function menuitemadmin() {
+          if (admin.style.display == "none") {
+               admin.style.display = "block"
+          }
+          else {
+               admin.style.display = "none"
+          }
+     }
+</script>
+
 </html>

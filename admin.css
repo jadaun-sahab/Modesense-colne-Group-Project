@@ -4,22 +4,24 @@
 }
 
 h1 {
-     margin: 20px 0;
+     margin: 0 0 20px 0;
      text-align: center;
 }
 
 .user {
      position: absolute;
      right: 0rem;
-     top: 1em;
+     top: .6em;
      display: flex;
 }
-.user h2{margin-top: 1rem;
+
+.user h2 {
+     margin-top: 1rem;
      margin-left: 2rem;
 }
 
 .user img {
- margin: 2px;
+     margin: 2px;
      border-radius: 50%;
      width: 50px;
 }
@@ -37,54 +39,70 @@ body {
 
 .child1 {
      box-shadow: 2px 2px 9px black;
-     width: 19%;
+     width: 280px;
      display: block;
      margin: 20px 20px 20px 0;
-   
 }
-.fa-solid{
+
+#child1 .fa-solid {
      animation-name: js;
      animation-duration: 3s;
      animation-iteration-count: infinite;
 }
+
 @keyframes js {
      0% {
           rotate: 2deg;
      }
+
      10% {
           rotate: 36deg;
      }
+
      20% {
           rotate: 72deg;
      }
+
      20% {
           rotate: 108deg;
      }
+
      40% {
           rotate: 144deg;
      }
-   
+
      50% {
           rotate: 180deg;
      }
-   
+
      60% {
           rotate: 216deg;
      }
+
      70% {
           rotate: 252deg;
      }
+
      80% {
           rotate: 288deg;
      }
+
      90% {
           rotate: 324deg;
      }
+
      100% {
           rotate: 360deg;
      }
 
-   }
+}
+
+.fa-bars {
+     color: rgb(0, 0, 0);
+     font-size: 2rem;
+     margin: 1rem;
+}
+
 .child1 li {
      box-shadow: 2px 2px 15px rgb(175, 174, 174);
      transition: all .3s;
@@ -111,8 +129,8 @@ body {
 }
 
 .child2 {
-     margin-bottom: 4rem;
-     width: 70%;
+     margin: 0 auto 4rem auto;
+     width: 78%;
      box-shadow: 2px 2px 21px rgb(255, 251, 251);
 }
 
@@ -124,7 +142,7 @@ body {
      padding: 30px;
      height: 175px;
      display: flex;
-     width: 24%;
+     max-width: 280px;
      margin: 10px auto;
      border-radius: 10px;
      box-shadow: 2px 2px 21px rgb(255, 251, 251);
@@ -158,11 +176,12 @@ body {
      height: 80px;
      width: 90px;
 }
-.box h2{
+
+.box h2 {
      margin: 10px 0;
 }
 
-.box2-1{
+.box2-1 {
      display: block;
      font-size: 1.2rem;
      margin-top: 4em;
@@ -205,6 +224,91 @@ body {
 .recent1 li a {
      color: black;
 }
-.fa-arrow-right-from-bracket{
+
+.fa-arrow-right-from-bracket {
      rotate: 180deg;
+}
+
+@media (max-width:1200px) {
+     .child1 {
+          position: absolute;
+          z-index: 2;
+          background-color: #fff;
+     }
+
+     .child2 {
+          width: 95%;
+     }
+
+     .box {
+          max-width: 240px;
+     }
+}
+
+@media (max-width:950px) {
+     .child2-1 {
+          display: block;
+     }
+
+     .recent {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+     }
+
+     .recent1 li {
+          width: 75%;
+     }
+
+     .box {
+          max-width: 350px;
+     }
+}
+
+@media (max-width:550px) {
+     .recent {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+     }
+
+     .box {
+          max-width: 300px;
+     }
+}
+
+@media (max-width:400px) {
+     .recent {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+     }
+
+     .box {
+          max-width: 240px;
+     }
+
+     .box1 {
+          height: 70px;
+          width: 90px;
+          padding-left: 2.1rem;
+          font-size: 1.7rem;
+          padding-top: 2rem;
+     }
+
+     .box2 {
+          padding-left: 1.3rem;
+          font-size: 1.7rem;
+          padding-top: 2rem;
+          height: 60px;
+          width: 70px;
+     }
+
+     .box3 {
+          height: 50px;
+          width: 50px;
+          font-size: 1.5rem;
+          padding-left: 1.3rem;
+          padding-top: 1.4rem;
+     }
 }
