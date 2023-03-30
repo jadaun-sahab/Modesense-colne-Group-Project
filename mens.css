@@ -55,6 +55,7 @@
       box-shadow: 2px 2px 14px rgb(82, 82, 82); 
   }
   .product img {
+    object-fit: cover;
     width: 100%;
     height: 400px;
     display: block;
