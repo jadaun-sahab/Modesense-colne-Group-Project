@@ -1,4 +1,4 @@
-<!---This page is the Dashboard/Home page of Admin side-->
+<!---This page is the Products Details page of Admin side that displays the data of product of the website. This can be considered as Read og CRUD Operation-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,9 +6,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="admin.css">
-	<link rel="shortcut icon" href="/images/logo5.jpg" type="image/x-icon">
-	<title>Dashboard - Admin Page</title>
+	<link rel="stylesheet" href="product.css">
+	<link rel="shortcut icon" href="images/logo5.jpg" type="image/x-icon">
+	<title>Products - Admin Page</title>
 </head>
 <body>
 	<!--------------------------- Sidebar Starts here------------------------------>
@@ -18,7 +18,7 @@
 			<span class="text">Admin</span>
 		</a>
 		<ul class="side-menu top">
-			<li class="active">
+			<li>
 				<a href="admin.html">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Dashboard</span>
@@ -30,7 +30,7 @@
 					<span class="text">Users</span>
 				</a>
 			</li>
-			<li>
+			<li  class="active">
 				<a href="product.html">
 					<i class='bx bxs-box'></i>
 					<span class="text">Products</span>
@@ -65,7 +65,7 @@
 	<!--------------------------- Navbar Starts here------------------------------>
 		<nav>
 			<i class='bx bx-menu' ></i>
-			<a href="#" class="nav-link">Categories</a>
+			<a href="#" class="nav-link">Products</a>
 			<form action="#">
 				<div class="form-input">
 					<input type="search" placeholder="Search...">
@@ -75,114 +75,40 @@
 		</nav>
 	<!--------------------------- Navbar Ends here------------------------------>
 
-	<!-------------------------- Dashboard Starts here---------------------------->
+	<!-------------------- Products Details Section Starts here-------------------->
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1>Dashboard</h1>
+					<h1>Product Details</h1>
 				</div>
 			</div>
-
-			<ul class="box-info">
-				<li>
-					<i class='bx bxs-cart' ></i>
-					<span class="text">
-						<h3 id="totalProducts"></h3>
-						<p>Products</p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-group' ></i>
-					<span class="text">
-						<h3>3274</h3>
-						<p>Users</p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-truck' ></i>>
-					<span class="text">
-						<h3>4285</h3>
-						<p>Orders</p>
-					</span>
-				</li>
-			</ul>
-
-
 			<div class="table-data">
 				<div class="order">
 					<div class="head">
-						<h3>Recent Orders</h3>
+						<h3>PRODUCTS</h3>
 						<i class='bx bx-search' ></i>
 						<i class='bx bx-filter' ></i>
 					</div>
 					<table>
 						<thead>
 							<tr>
-								<th>User</th>
-								<th>Date Order</th>
+								<th>Product ID</th>
+								<th>Brand</th>
+								<th>Name</th>
+								<th>Product Type</th>
 								<th>Price</th>
-								<th>Status</th>
+								<th>Image</th>
 							</tr>
 						</thead>
-						<tbody>
-							<tr>
-								<td>
-									Captain Jack
-								</td>
-								<td>14-04-2023</td>
-								<td>$244</td>
-								<td>In Transit</td>
-							</tr>
-						</tbody>
-                              <tbody>
-							<tr>
-								<td>
-									Janice Pariate
-								</td>
-								<td>11-04-2023</td>
-								<td>$743</td>
-								<td>In Transit</td>
-							</tr>
-						</tbody>
-                              <tbody>
-							<tr>
-								<td>
-									Elizabeth Bennet 
-								</td>
-								<td>01-09-2022</td>
-								<td>$352</td>
-								<td>Completed</td>
-							</tr>
-						</tbody>
-                              <tbody>
-							<tr>
-								<td>
-									Charles Bingley
-								</td>
-								<td>21-10-2022</td>
-								<td>$222</td>
-								<td>Completed</td>
-							</tr>
-						</tbody>
-                              <tbody>
-							<tr>
-								<td>
-									Elizabeth Bennet 
-								</td>
-								<td>25-04-2022</td>
-								<td>$465</td>
-								<td>Completed</td>
-							</tr>
+						<tbody id="ProductDetails">
 						</tbody>
 					</table>
-                         
 				</div>
 				
 		</main>
-	<!-------------------------- Dashboard Ends here---------------------------->
+	<!-------------------- Products Details Section Ends here-------------------->
 	</section>
-	<!------------------------ Content Part Starts here--------------------------->
-
-	<script src="admin.js"></script>
+	<!------------------------ Content Part Ends here--------------------------->
+	<script src="product.js"></script>
 </body>
 </html>

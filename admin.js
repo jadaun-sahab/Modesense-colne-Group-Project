@@ -1,4 +1,4 @@
-//Accesing all the products from html. 
+//Accesing all the products from HTML. 
 let baseurl="https://63c2fb80b0c286fbe5f73c53.mockapi.io"
 let TotalProductCount=document.getElementById("totalProducts")
 
