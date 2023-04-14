@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="user.css">
+	<link rel="shortcut icon" href="images/logo5.jpg" type="image/x-icon">
+	<title>Users - Admin Page</title>
+</head>
+<body>
+	<!--------------------------- Sidebar Starts here------------------------------>
+	<section id="sidebar">
+		<a href="#" class="Admin">
+			<i class='bx bxs-crown' ></i>
+			<span class="text">Admin</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="admin.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li  class="active">
+				<a href="user.html">
+					<i class='bx bxs-user-detail'></i>
+					<span class="text">Users</span>
+				</a>
+			</li>
+			<li>
+				<a href="product.html">
+					<i class='bx bxs-box'></i>
+					<span class="text">Products</span>
+				</a>
+			</li>
+			<li>
+				<a href="add.html">
+					<i class='bx bx-plus-medical' ></i>
+					<span class="text">Add / Update</span>
+				</a>
+			</li>
+			<li>
+				<a href="manage.html">
+					<i class='bx bxs-data' ></i>
+					<span class="text">Manage Product</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!--------------------------- Sidebar Ends here------------------------------>
+
+	<!------------------------ Content Part Starts here--------------------------->
+	<section id="content">
+	<!--------------------------- Navbar Starts here------------------------------>
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">User Name</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+		</nav>
+	<!--------------------------- Navbar Ends here------------------------------>
+
+	<!----------------------- Users Details Section Starts here--------------------->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>User Details</h1>
+				</div>
+			</div>
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>USERS</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Email ID</th>
+								<th>Contact Number</th>
+								<th>City</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Emily</td>
+                                <td>Rodriguez</td>
+								<td>emily.rodriguez@email.com</td>
+								<td>555-123-4567</td>
+								<td>Miami</td>
+							</tr>
+						</tbody>
+                        <tbody>
+							<tr>
+								<td>David</td>
+                                <td>Kim</td>
+								<td>david.kim@email.com</td>
+								<td>555-234-5678</td>
+								<td>Los Angeles</td>
+							</tr>
+						</tbody>
+                         <tbody>
+							<tr>
+								<td>Jessica</td>
+                                <td>Patel</td>
+								<td>jessica.patel@email.com</td>
+								<td>555-345-6789</td>
+								<td>New York</td>
+							</tr>
+						</tbody>
+                        <tbody>
+							<tr>
+								<td>Samantha</td>
+                                <td>Nguyen</td>
+								<td>samantha.nguyen@email.com</td>
+								<td>555-345-0123</td>
+								<td>Seattle</td>
+							</tr>
+						</tbody>
+                        <tbody>
+							<tr>
+								<td>Michael</td>
+                                <td>Wong</td>
+								<td>michael.wong@email.com</td>
+								<td>555-345-7890</td>
+								<td>San Francisco</td>
+							</tr>
+						</tbody>
+                        <tbody>
+							<tr>
+								<td>Christopher</td>
+                                <td>Smith</td>
+								<td>christopher.smith@email.com</td>
+								<td>555-123-9012</td>
+								<td>Chicago</td>
+							</tr>
+						</tbody>
+                        <tbody>
+							<tr>
+								<td>Olivia</td>
+                                <td>Lee</td>
+								<td>olivia.lee@email.com</td>
+								<td>555-234-2345</td>
+								<td>Los Angeles</td>
+							</tr>
+						</tbody>
+                         <tbody>
+							<tr>
+								<td>William</td>
+                                <td>Davis</td>
+								<td>william.davis@email.com</td>
+								<td>555-345-2345</td>
+								<td>Atlanta</td>
+							</tr>
+						</tbody>
+                        <tbody>
+							<tr>
+								<td>Ashley</td>
+                                <td>Garcia</td>
+								<td>ashley.garcia@email.com</td>
+								<td>555-345-3456</td>
+								<td>Phoenix</td>
+							</tr>
+						</tbody>
+                        <tbody>
+							<tr>
+								<td>Benjamin</td>
+                                <td>Johnson</td>
+								<td>benjamin.johnson@email.com</td>
+								<td>555-345-8901</td>
+								<td>Boston</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+		</main>
+	<!----------------------- Users Details Section Starts here--------------------->
+	</section>
+	<!------------------------ Content Part Starts here--------------------------->
+	</body>
+</html>
