@@ -1,139 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Admin-Page</title>
-     <link rel="stylesheet" href="admin.css">
-     <script src="https://kit.fontawesome.com/b06a377e67.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="admin.css">
+	<link rel="shortcut icon" href="logo-black.png" type="image/x-icon">
+	<title>Admin Page</title>
 </head>
-
 <body>
-     <i class="fa-solid fa-bars" onclick="menuitemadmin()"></i>
-     <h1>DASHBOARED</h1>
-     <div class="user">
-          <h2>Admin</h2>
-          <img src="/images/admin.jpg" alt="">
-     </div>
 
 
-     <div class="mainbox">
-          <div class="child1" id="child1">
-               <li><a href="#"><i class="fa-solid fa-chart-line"></i>DASHBOARED</a></li>
-               <li><a href="#"><i class="fa-solid fa-person"></i>COUSTMER</a></li>
-               <li><a href="#"><i class="fa-solid fa-chart-simple"></i>ANALYTICS</a></li>
-               <li><a href="#"><i class="fa-solid fa-message"></i>MESSAGES</a></li>
-               <li><a href="#"> <i class="fa-solid fa-cart-shopping"></i>ORDER</a></li>
-               <li><a href="#"><i class="fa-solid fa-box"></i>PRODUCT</a> </li>
-               <li><a href="#"><i class="fa-solid fa-bars-progress"></i>REPORT</a></li>
-               <li><a href="#"><i class="fa-solid fa-gear"></i>SETTINGS</a></li>
-               <li><a href="/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>LOGOUT</a></li>
-          </div>
-          <div class="child2">
+	<!--------------------------- Sidebar Starts here------------------------------>
+	<section id="sidebar">
+		<a href="#" class="Admin">
+			<i class='bx bxs-crown' ></i>
+			<span class="text">Admin</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="Admin.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="User.html">
+					<i class='bx bxs-user-detail'></i>
+					<span class="text">Users</span>
+				</a>
+			</li>
+			<li>
+				<a href="product.html">
+					<i class='bx bxs-box'></i>
+					<span class="text">Products</span>
+				</a>
+			</li>
+			<li>
+				<a href="Add.html">
+					<i class='bx bx-plus-medical' ></i>
+					<span class="text">Add / Update</span>
+				</a>
+			</li>
+			<li>
+				<a href="manage.html">
+					<i class='bx bxs-data' ></i>
+					<span class="text">Manage Product</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="signin.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!--------------------------- Sidebar Ends here------------------------------>
 
-               <div class="child2-1">
-                    <div class="box">
-                         <div>
-                              <h2>SALES</h2>
-                              <h3>$12000</h3>
-                              <div class="box2-1">In Last Week</div>
-                         </div>
-                         <div class="box1">91%</div>
-                    </div>
+	<!------------------------ Content Part Starts here--------------------------->
+	<section id="content">
+	<!--------------------------- Navbar Starts here------------------------------>
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+		</nav>
+	<!--------------------------- Navbar Ends here------------------------------>
 
-                    <div class="box">
-                         <div>
-                              <h2>INCOME</h2>
-                              <h3>$9900</h3>
-                              <div class="box2-1">In Last Week</div>
-                         </div>
-                         <div class="box2">49%</div>
-                    </div>
+	<!-------------------------- Dashboard Starts here---------------------------->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+				</div>
+			</div>
 
-                    <div class="box">
-                         <div>
-                              <h2>EXPENSE</h2>
-                              <h3>$6000</h3>
-                              <div class="box2-1">In Last Week</div>
-                         </div>
-                         <div class="box3">24%</div>
-                    </div>
-
-               </div>
-               <h1>Recent Order</h1>
-               
-               <div class="recent">
-                    <div class="recent1">
-                         <ul>NAME</ul>
-                         <li>Shirt</li>
-                         <li>Cap</li>
-                         <li>Belt</li>
-                         <li>Crop-Top</li>
-                         <li>Shirt</li>
-                         <li>T-Shirt</li>
-                    </div>
-
-                    <div class="recent1">
-                         <ul>CODE</ul>
-                         <li>0027</li>
-                         <li>0047</li>
-                         <li>0035</li>
-                         <li>0070</li>
-                         <li>0045</li>
-                         <li>0021</li>
-                    </div>
-
-                    <div class="recent1">
-                         <ul>PAYMENT</ul>
-                         <li>DUE</li>
-                         <li>CLEAR</li>
-                         <li>CLEAR</li>
-                         <li>DUE</li>
-                         <li>CLEAR</li>
-                         <li>CLEAR</li>
-                    </div>
-
-                    <div class="recent1">
-                         <ul>STATUS</ul>
-                         <li>PENDING</li>
-                         <li>SUCCESS</li>
-                         <li>SUCCESS</li>
-                         <li>PENDING</li>
-                         <li>SUCCESS</li>
-                         <li>SUCCESS</li>
-                    </div>
-
-                    <div class="recent1">
-                         <ul>DEATILS</ul>
-                         <li><a href="">Shirt</a></li>
-                         <li><a href="">Cap</a></li>
-                         <li><a href="">Belt</a></li>
-                         <li><a href="">Crop-Top</a></li>
-                         <li><a href="">Shirt</a></li>
-                         <li><a href="">T-Shirt</a></li>
-                    </div>
-               </div>
-          </div>
-     </div>
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-cart' ></i>
+					<span class="text">
+						<h3 id="totalProducts"></h3>
+						<p>Products</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group' ></i>
+					<span class="text">
+						<h3>3274</h3>
+						<p>Users</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-truck' ></i>>
+					<span class="text">
+						<h3>4285</h3>
+						<p>Orders</p>
+					</span>
+				</li>
+			</ul>
 
 
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Recent Orders</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>User</th>
+								<th>Date Order</th>
+								<th>Price</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									Captain Jack
+								</td>
+								<td>14-04-2023</td>
+								<td>$244</td>
+								<td>In Transit</td>
+							</tr>
+						</tbody>
+                              <tbody>
+							<tr>
+								<td>
+									Janice Pariate
+								</td>
+								<td>11-04-2023</td>
+								<td>$743</td>
+								<td>In Transit</td>
+							</tr>
+						</tbody>
+                              <tbody>
+							<tr>
+								<td>
+									Elizabeth Bennet 
+								</td>
+								<td>01-09-2022</td>
+								<td>$352</td>
+								<td>Completed</td>
+							</tr>
+						</tbody>
+                              <tbody>
+							<tr>
+								<td>
+									Charles Bingley
+								</td>
+								<td>21-10-2022</td>
+								<td>$222</td>
+								<td>Completed</td>
+							</tr>
+						</tbody>
+                              <tbody>
+							<tr>
+								<td>
+									Elizabeth Bennet 
+								</td>
+								<td>25-04-2022</td>
+								<td>$465</td>
+								<td>Completed</td>
+							</tr>
+						</tbody>
+					</table>
+                         
+				</div>
+				
+		</main>
+	<!-------------------------- Dashboard Ends here---------------------------->
+	</section>
+	<!------------------------ Content Part Starts here--------------------------->
+
+	<script src="admin.js"></script>
 </body>
-<script>
-
-     let admin = document.getElementById("child1")
-     admin.style.display = "none"
-
-
-     function menuitemadmin() {
-          if (admin.style.display == "none") {
-               admin.style.display = "block"
-          }
-          else {
-               admin.style.display = "none"
-          }
-     }
-</script>
-
 </html>

@@ -156,7 +156,7 @@ function feedbackPage(){
 
 function massage(){
   let mass=  document.getElementById("textarea").value
-   alert("your Feedback has been Submitted")
+   alert("Your Feedback has been Submitted")
    localStorage.setItem("massage",mass)
 
 
