@@ -93,4 +93,3 @@ function search(){
     displayData(newData);
 }
 
-
