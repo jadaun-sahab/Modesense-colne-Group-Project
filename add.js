@@ -1,4 +1,4 @@
-// Accesing All The elements From Html
+//Accesing all the products from HTML. 
 
 let Id=document.getElementById("id");
 let Name=document.getElementById("name");
@@ -20,20 +20,14 @@ let showname=document.getElementById("h3name");
 let showprice=document.getElementById("h3price");
 let showdesc=document.getElementById("desc");
 
-
-
-
-// Getting Number of Products
+//Getting the total number of products
 fetch(`${baseurl}/Products`)
     .then(res=>res.json())
     .then(data=>{
        TotalProductCount.innerText=data.length
     })
 
-
-
-
-// adding the Product to API
+//Adding the new product to API with the help of ID. This is the Create functionality of CRUD operation.
 
 AddButton.addEventListener("click",()=>{
     let obj={
@@ -65,8 +59,7 @@ AddButton.addEventListener("click",()=>{
     })
 })
 
-
-// Getting the Product from API
+//Getting the new product from API with the help of ID. This is the Read functionality of CRUD operation.
 
 GetButton.addEventListener("click",()=>{
     let obj={
@@ -90,13 +83,9 @@ GetButton.addEventListener("click",()=>{
         showprice.innerText=data.price;
 
     })
-
-
 })
 
-
-
-// Updating The Product From API
+//Updating the new product to API with the help of ID. This is the Update functionality of CRUD operation.
 
 UpdateButton.addEventListener("click",()=>{
     let obj={
@@ -128,7 +117,5 @@ UpdateButton.addEventListener("click",()=>{
     .catch((error)=>{
         console.log(error)
     })
-
-
 })
 

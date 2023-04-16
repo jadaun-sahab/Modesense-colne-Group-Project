@@ -55,7 +55,6 @@ function Products(Data){
             })
         })
 
-
         //Appending created elements
         Imagetd.append(Image);
         div.append(ID,Brand,Name,ProductType,Price,Imagetd);
