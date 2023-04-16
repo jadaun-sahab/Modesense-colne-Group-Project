@@ -48,10 +48,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
-
-
 /* SIDEBAR */
 #sidebar {
     position: fixed;
@@ -169,10 +165,6 @@ body {
 
 /* SIDEBAR */
 
-
-
-
-
 /* CONTENT */
 #content {
     position: relative;
@@ -185,9 +177,6 @@ body {
     width: calc(100% - 60px);
     left: 60px;
 }
-
-
-
 
 /* NAVBAR */
 #content nav {
@@ -274,10 +263,6 @@ body {
 
 /* NAVBAR */
 
-
-
-
-
 /* MAIN */
 #content main {
     width: 100%;
@@ -301,11 +286,6 @@ body {
     margin-bottom: 10px;
     color: var(--dark);
 }
-
-
-
-
-
 
 #content main .box-info {
     display: grid;
@@ -357,10 +337,6 @@ body {
 #content main .box-info li .text p {
     color: var(--dark);
 }
-
-
-
-
 
 #content main .table-data {
     display: flex;
@@ -467,13 +443,12 @@ body {
 /* MAIN */
 /* CONTENT */
 
-
+/*form styles*/
 
 body {
     font-family: montserrat, arial, verdana;
 }
 
-/*form styles*/
 #msform {
     width: 500px;
     margin: 50px auto;
@@ -535,8 +510,7 @@ body {
     margin-bottom: 30px;
 }
 
-
-
+/*RESPONSIVENESS*/
 
 @media screen and (max-width: 580px) {
     #sidebar {
@@ -552,11 +526,6 @@ body {
         display: none;
     }
 }
-
-
-
-
-
 
 @media screen and (max-width: 576px) {
     #content nav form .form-input input {
