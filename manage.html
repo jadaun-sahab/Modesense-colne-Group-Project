@@ -1,14 +1,13 @@
-<!---This page is the Products Details page of Admin side that displays the data of product of the website. This can be considered as Read of CRUD Operation-->
-
+<!---This page is the Manage Details page of Admin side that helps deletes the data of product of the website. This can be considered as Delete of CRUD Operation-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="product.css">
-	<link rel="shortcut icon" href="images/logo5.jpg" type="image/x-icon">
-	<title>Products - Admin Page</title>
+	<link rel="stylesheet" href="manage.css">
+	<link rel="shortcut icon" href="logo-black.png" type="image/x-icon">
+	<title>Manage - Admin Page</title>
 </head>
 <body>
 	<!--------------------------- Sidebar Starts here------------------------------>
@@ -30,7 +29,7 @@
 					<span class="text">Users</span>
 				</a>
 			</li>
-			<li  class="active">
+			<li  >
 				<a href="product.html">
 					<i class='bx bxs-box'></i>
 					<span class="text">Products</span>
@@ -42,7 +41,7 @@
 					<span class="text">Add / Update</span>
 				</a>
 			</li>
-			<li>
+			<li class="active">
 				<a href="manage.html">
 					<i class='bx bxs-data' ></i>
 					<span class="text">Manage Product</span>
@@ -60,9 +59,11 @@
 	</section>
 	<!--------------------------- Sidebar Ends here------------------------------>
 
-	<!------------------------ Content Part Starts here--------------------------->
+
+
+	<!-- CONTENT PART START-->
 	<section id="content">
-	<!--------------------------- Navbar Starts here------------------------------>
+		<!-- NAVBAR START-->
 		<nav>
 			<i class='bx bx-menu' ></i>
 			<a href="#" class="nav-link">Products</a>
@@ -73,15 +74,19 @@
 				</div>
 			</form>
 		</nav>
-	<!--------------------------- Navbar Ends here------------------------------>
+		<!-- NAVBAR END-->
 
-	<!-------------------- Products Details Section Starts here-------------------->
+		<!-- MAIN PART START-->
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1>Product Details</h1>
+					<h1>Manage Product</h1>
 				</div>
 			</div>
+
+			
+
+
 			<div class="table-data">
 				<div class="order">
 					<div class="head">
@@ -93,11 +98,11 @@
 						<thead>
 							<tr>
 								<th>Product ID</th>
-								<th>Brand</th>
+								<th> Brand</th>
 								<th>Name</th>
 								<th>Product Type</th>
 								<th>Price</th>
-								<th>Image</th>
+								<th>Delete</th>
 							</tr>
 						</thead>
 						<tbody id="ProductDetails">
@@ -106,9 +111,11 @@
 				</div>
 				
 		</main>
-	<!-------------------- Products Details Section Ends here-------------------->
+		<!-- MAIN PART END -->
 	</section>
-	<!------------------------ Content Part Ends here--------------------------->
-	<script src="product.js"></script>
+	<!-- CONTENT PART END -->
+	
+
+	<script src="manage.js"></script>
 </body>
 </html>

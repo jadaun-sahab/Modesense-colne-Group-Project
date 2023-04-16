@@ -1,4 +1,4 @@
-// Accesing all the required elements From HTML
+// Accesing All The elements From Html
 
 let Id=document.getElementById("id");
 let Name=document.getElementById("name");
@@ -20,14 +20,20 @@ let showname=document.getElementById("h3name");
 let showprice=document.getElementById("h3price");
 let showdesc=document.getElementById("desc");
 
-// Getting total number of products available
+
+
+
+// Getting Number of Products
 fetch(`${baseurl}/Products`)
     .then(res=>res.json())
     .then(data=>{
        TotalProductCount.innerText=data.length
     })
 
-//The below function will add a new product in the API, hence performing the Create operation of CRUD.
+
+
+
+// adding the Product to API
 
 AddButton.addEventListener("click",()=>{
     let obj={
@@ -59,7 +65,8 @@ AddButton.addEventListener("click",()=>{
     })
 })
 
-//The below function will get the required product from the API using ID, hence performing the Read operation of CRUD.
+
+// Getting the Product from API
 
 GetButton.addEventListener("click",()=>{
     let obj={
@@ -87,7 +94,9 @@ GetButton.addEventListener("click",()=>{
 
 })
 
-//The below function will update the required product from the API using ID, hence performing the Update operation of CRUD.
+
+
+// Updating The Product From API
 
 UpdateButton.addEventListener("click",()=>{
     let obj={
@@ -109,7 +118,6 @@ UpdateButton.addEventListener("click",()=>{
             'Content-Type':'application/json'
         },
         body:JSON.stringify(obj)
-
     })
     .then((res)=>{
         return res.json
