@@ -3,15 +3,20 @@
 
 This clone website is a collaboration project made by Vikas Jadaun (Team leader), Ahamed Faraz, Swati Tanu, Ranjan Sahu and Rajesh Kumar. This cloned ecommerce website is built using HTML, CSS, Vanilla JavaScript, APIs and a couple of external libraries such as Bootstrap, Font Awesome etc. 
 
+### Key Features:
+* Login 
+* Signup
+* Search 
+* Filter
+* Add to Cart
+* Sales Page
+* Feedback 
+* Newsletter
+* Admin Side CRUD Functionalities
+* User Details
 ### Deployment:
 
 The deployed link of the project: 
-
-## Demo
-
-A short video demo of the complete project: 
-
-
 
 ## Contributions
 
