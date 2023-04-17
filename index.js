@@ -1,20 +1,27 @@
 
 // -------------------------navbar--------------------------
 
+// let displaywid=document.getElementsB("body").value;
+// if(displaywid<=1200){
+    // let x= document.getElementById("navi")
+    // x.style.display="block"
+    
+    // function menuitem(){
+    //     if(x.style.display=="none"){
+    //         x.style.display="block"
+    //     }
+    //     else{
+    //         x.style.display="none"
+    //     }
+    // }
+// }
 
-
-let x= document.getElementById("navi")
-x.style.display="block"
-
-function menuitem(){
-    if(x.style.display=="none"){
-        x.style.display="block"
-    }
-    else{
-        x.style.display="none"
-    }
-}
-
+const toggleButton = document.getElementsByClassName('fa-bars')[0]
+    const navbarLinks = document.getElementsByClassName('nav')[0]
+   
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
 
 
 // -------------------------login--------------------------

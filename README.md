@@ -21,5 +21,3 @@ The deployed link of the project:
 ## Contributions
 
 Contributions are always welcome! Please submit an issue using the issue tab above if you have any feedback or improvement suggestions. I would appreciate it if you could submit a pull request with a fix.
-
-

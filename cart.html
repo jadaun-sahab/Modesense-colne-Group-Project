@@ -97,7 +97,8 @@
         justify-content: center;
         margin: auto;
     }
-    .cart-empty img{
+
+    .cart-empty img {
         width: 80%;
     }
 
@@ -181,7 +182,26 @@
             }
         }
     
-    
+   
+    .pay {
+        text-align: center;
+        padding: 6px 10px;
+        box-shadow: 2px 3px 5px black;
+        width: 200px;
+        background-color: rgb(244, 77, 136);
+        margin: 0 auto;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    .pay:active{
+        transform: translateY(4px);
+        box-shadow: 0px 0px 1px black;
+    }
+
 </style>
 
 <body>
@@ -290,7 +310,7 @@
     </div>
 
     <!------------------- Help section ------------------->
-   
+
 
 
     <div id="login">
@@ -322,17 +342,17 @@
             </div>
             <a href="/login.html">Already have an account? Please sign in.</a>
             <br>
-            <a href="/admin.html">Login as Admin</a>
+            <a href="/adminlogin.html">Login as Admin</a>
         </div>
     </div>
 
-   
+<a href="/payment.html"><div class="pay">BUY-NOW</div></a>
     
 
 
     <!------------------- Footer section ------------------->
- 
-    
+
+
 </body>
 
 </html>

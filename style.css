@@ -10,6 +10,26 @@
 .fa-bag-shopping{
   color: black;
 }
+.fa-bag-shopping >ol{
+  position: absolute;
+  right: 2.5rem;
+  top: -0px;
+  font-size: .7rem;
+  display: none;
+}
+.fa-bag-shopping:hover > ol{
+display: block;
+}
+.fa-user >ol{
+  position: absolute;
+  right: .5rem;
+  top: -0px;
+  font-size: .7rem;
+  display: none;
+}
+.fa-user:hover > ol{
+display: block;
+}
 #navbar {
   z-index: 1000;
   width: 100%;

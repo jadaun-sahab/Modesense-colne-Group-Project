@@ -1,13 +1,30 @@
 /* <!------------------- media queries starts here -------------------> */
 
 @media (max-width: 1200px) {
+  .nav ul {
+    width: 200px;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    width: 30%;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
   #navi ul li ul li {
     display: none;
   }
+
   #navbar .fa-bars {
     left: 0;
     display: block;
   }
+
   #navi ul {
     display: block;
     position: absolute;
@@ -15,12 +32,10 @@
     top: 1rem;
     border-radius: 10px;
     left: 2rem;
-    background: linear-gradient(
-      45deg,
-      rgba(3, 3, 3, 0.642),
-      rgb(64, 220, 255),
-      rgba(0, 0, 0, 0.473)
-    );
+    background: linear-gradient(45deg,
+        rgba(3, 3, 3, 0.642),
+        rgb(64, 220, 255),
+        rgba(0, 0, 0, 0.473));
   }
 
   #navi ul li {
@@ -28,27 +43,34 @@
     text-align: left;
     padding: 8px 40px 20px 5px;
   }
+
   #navi ul li a {
     font-weight: bold;
     font-size: 1.3rem;
     color: rgb(10, 10, 10);
   }
+
   .login3 {
     width: 60%;
   }
+
   .login h3 {
     width: 90%;
   }
+
   #login {
     width: 80%;
     left: 7rem;
   }
+
   .login-1 h1 {
     font-size: 2rem;
   }
+
   .login-1 p {
     margin: 0 0 30px 0;
   }
+
   .logo {
     width: 300%;
     text-align: center;
@@ -56,31 +78,38 @@
     align-items: center;
     display: flex;
   }
+
   .sec4 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
   .section5 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
   #section7 {
     display: grid;
     margin: auto;
     padding: 0 20px;
     grid-template-columns: repeat(4, 1fr);
   }
+
   #section1-topiclist {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
   .sec7-last {
     width: 100%;
   }
+
   #feedback {
     width: 50%;
     left: 18em;
   }
+
   .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -92,75 +121,88 @@
 /* <!------------------- screen-1 ends here -------------------> */
 
 @media (max-width: 850px) {
-  .carttotal{
+  .carttotal {
     width: 55%;
   }
+
   .products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     max-width: 1240px;
   }
+
   .one span {
     display: none;
   }
+
   #container {
     width: 85%;
   }
+
   #previous,
   #previous2,
   #previous3 {
     right: -10%;
   }
+
   #next,
   #next2,
   #next3 {
     left: -10%;
   }
+
   #login {
     height: 100%;
     left: 3rem;
     width: 90%;
     background-color: rgba(240, 248, 255, 0.909);
   }
+
   .login-1 {
     display: none;
   }
+
   .login-2 {
     width: 90%;
-    background: linear-gradient(
-      -45deg,
-      rgba(246, 144, 144, 0.619),
-      rgba(193, 137, 231, 0.619),
-      rgba(137, 137, 243, 0.619)
-    );
+    background: linear-gradient(-45deg,
+        rgba(246, 144, 144, 0.619),
+        rgba(193, 137, 231, 0.619),
+        rgba(137, 137, 243, 0.619));
   }
+
   .sec3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
   .sec4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
   .section5 {
     margin: 0 auto;
     width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
   .sec5 {
     margin: 0 auto;
   }
+
   #section6 {
     display: flex;
     flex-direction: column;
   }
+
   .sec6 {
     width: 90%;
     text-align: center;
     display: block;
   }
+
   #section7 {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -169,7 +211,7 @@
     width: 90%;
     left: 1em;
   }
-  
+
 }
 
 /* <!------------------- screen-2 ends here -------------------> */
@@ -178,7 +220,8 @@
   .btna {
     width: 50%;
   }
-  .h1{
+
+  .h1 {
     font-size: 1.4rem;
   }
 
@@ -193,12 +236,14 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
+
   .filter-2 li {
     list-style: none;
     font-size: 0.6rem;
 
     width: 100%;
   }
+
   .filter-2 ol {
     font-size: 1rem;
   }
@@ -210,9 +255,11 @@
   .filter {
     display: flex;
   }
+
   .box {
     display: block;
   }
+
   .products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -220,11 +267,13 @@
     margin: 0 auto;
     width: 95%;
   }
+
   .product img {
     width: 90%;
     margin: 0 auto;
     display: block;
   }
+
   .nav2 ul input {
     display: block;
     position: absolute;
@@ -233,74 +282,91 @@
     margin: 0px auto;
     width: 80%;
   }
+
   #login {
     height: 100%;
     left: 1rem;
     width: 90%;
   }
+
   .login3 {
     width: 90%;
   }
+
   .login-2 {
     width: 100%;
   }
+
   #container {
     margin: 0;
     width: 90%;
   }
+
   #previous,
   #previous2,
   #previous3 {
     right: -12%;
   }
+
   #next,
   #next2,
   #next3 {
     left: -12%;
   }
+
   .btn {
     font-size: 2rem;
     padding: 0;
   }
+
   .section5 {
     display: block;
   }
+
   .sec5 {
     width: 85%;
     display: block;
     margin: 0 auto;
   }
+
   .sec5 img {
     width: 80%;
   }
+
   .sec6 h2 {
     width: 90%;
     margin: 20px 0;
     padding: 0 20px;
     text-align: center;
   }
+
   #section7 {
     padding: 0 20px;
     display: block;
   }
+
   #footer {
     display: block;
     text-align: center;
     margin: 0 auto;
     width: 100%;
   }
+
   .two {
     margin: 0 auto;
     width: 80%;
   }
+
   .two li a {
     font-size: 0.8rem;
   }
+
   .two {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(4, 1fr);
   }
+
   .one {
     display: flex;
     padding: 0;
@@ -312,60 +378,73 @@
 /* <!------------------- screen-4 ends here -------------------> */
 
 @media (max-width: 500px) {
-  .carttotal{
+  .carttotal {
     width: 85%;
   }
+
   .filter2-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
   .filter {
     display: block;
   }
+
   .logo {
     width: 50%;
   }
+
   .sec3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
   #section1-topiclist {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
   .sec4 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
   #footer {
     width: 100%;
     display: block;
     margin: 0 auto;
     padding: 0 30px;
   }
+
   #previous,
   #previous2,
   #previous3 {
     right: -15%;
   }
+
   #next,
   #next2,
   #next3 {
     left: -15%;
   }
+
   #feedback {
     width: 90%;
     left: 1em;
   }
+
   #loginbtn {
     width: 80%;
   }
-  .one p{
+
+  .one p {
     width: 100%;
     text-align: center;
     margin: 0;
   }
-  #section7 h2{
+
+  #section7 h2 {
     padding-top: 40px;
   }
 }
@@ -373,30 +452,35 @@
 /* <!------------------- screen-5 ends here -------------------> */
 
 @media (max-width: 350px) {
-  .carttotal{
+  .carttotal {
     width: 90%;
   }
-  
+
   .btn {
     font-size: 1rem;
     padding: 0;
   }
+
   #section3 h1 {
     width: 100%;
     padding: 0 20x;
     font-size: 1.5rem;
   }
+
   .sec7-4 a {
     font-size: 1.5rem;
   }
+
   .sec6 h2 {
     font-size: 1.2rem;
   }
+
   #feedback {
     width: 90%;
     height: 100%;
     left: 1rem;
   }
+
   .btna {
     font-size: 0.8rem;
     width: 60%;
