@@ -26,11 +26,9 @@
 * Search 
 * Filter
 * Add to Cart
-* Sales Page
 * Feedback 
 * Newsletter
 * Admin Side CRUD Functionalities
-* User Details
 
 ## Run Locally
 ### Clone this Project and run by copying index.js path on the browser.
