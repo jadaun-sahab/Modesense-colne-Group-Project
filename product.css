@@ -46,10 +46,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
-
-
 /* SIDEBAR */
 #sidebar {
     position: fixed;
@@ -164,12 +160,7 @@ body {
     display: flex;
     justify-content: center;
 }
-
 /* SIDEBAR */
-
-
-
-
 
 /* CONTENT */
 #content {
@@ -269,12 +260,7 @@ body {
     border-radius: 0 36px 36px 0;
     cursor: pointer;
 }
-
 /* NAVBAR */
-
-
-
-
 
 /* MAIN */
 #content main {
@@ -384,13 +370,7 @@ body {
 /* MAIN */
 /* CONTENT */
 
-
-
-
-
-
-
-
+/*RESPONSIVENESS*/
 
 @media screen and (max-width: 580px) {
     #sidebar {
@@ -406,11 +386,6 @@ body {
         display: none;
     }
 }
-
-
-
-
-
 
 @media screen and (max-width: 576px) {
     #content nav form .form-input input {

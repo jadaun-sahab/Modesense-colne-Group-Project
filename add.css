@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
 
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 * {
     margin: 0;
     padding: 0;
@@ -160,6 +162,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 /* SIDEBAR */
 
 /* CONTENT */
@@ -284,6 +287,57 @@ body {
     color: var(--dark);
 }
 
+#content main .box-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 24px;
+    margin-top: 36px;
+}
+
+#content main .box-info li {
+    padding: 24px;
+    background: var(--light);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    grid-gap: 24px;
+}
+
+#content main .box-info li .bx {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content main .box-info li:nth-child(1) .bx {
+    background: var(--light-blue);
+    color: var(--blue);
+}
+
+#content main .box-info li:nth-child(2) .bx {
+    background: var(--light-yellow);
+    color: var(--yellow);
+}
+
+#content main .box-info li:nth-child(3) .bx {
+    background: var(--light-orange);
+    color: var(--orange);
+}
+
+#content main .box-info li .text h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+#content main .box-info li .text p {
+    color: var(--dark);
+}
+
 #content main .table-data {
     display: flex;
     flex-wrap: wrap;
@@ -298,6 +352,9 @@ body {
     background: var(--light);
     padding: 24px;
     overflow-x: auto;
+    background-image: url("background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #content main .table-data .head {
@@ -320,6 +377,25 @@ body {
 #content main .table-data .order {
     flex-grow: 1;
     flex-basis: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#imagecont {
+    margin: auto;
+    width: 600px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-right: 10px;
+}
+
+#content main .table-data .order img {
+    border-radius: 50%;
+    width: 100%;
+    object-fit: cover;
 }
 
 #content main .table-data .order table {
@@ -366,6 +442,73 @@ body {
 
 /* MAIN */
 /* CONTENT */
+
+/*form styles*/
+
+body {
+    font-family: montserrat, arial, verdana;
+}
+
+#msform {
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+/*inputs*/
+#msform input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 18px;
+}
+
+/*buttons*/
+#msform .action-button {
+    width: 100px;
+    background: #27AE60;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#msform .action-button:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+/*headings*/
+.fs-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 30px;
+}
 
 /*RESPONSIVENESS*/
 
