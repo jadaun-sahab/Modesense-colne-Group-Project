@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/logo5.jpg" type="image/x-icon">
-    <title>Card Payment</title>
+    <title>Fashion Hub | Card Payment</title>
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
     <style>
         *{
     margin: 0;
@@ -119,7 +120,7 @@ body{
             <div class="card-number">
                 <h3>Card Number</h3>
                 <div class="input-field">
-                    <input type="number" placeholder="Card Number" id="number"> 
+                    <input type="number" placeholder="Card Number (Must have 16 digits)" id="number"> 
                 </div>
             </div>
         </div>
@@ -174,7 +175,7 @@ body{
     function confirm(){
         if(cardNum.value.length==16 && cvv.value.length==3){ 
             alert('Payment successful')
-            window.location='index.html'
+            window.location='orderplaced.html'
         }
 
         else {

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin-Login</title>
+    <title>Fashion Hub | Admin Login</title>
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <script src="https://kit.fontawesome.com/b06a377e67.js" crossorigin="anonymous"></script>
@@ -163,11 +164,11 @@
         let loginem = document.getElementById("email3").value
         let loginpas = document.getElementById("password3").value
         if (loginem == se && loginpas == sp) {
-            alert("login successful")
+            alert("Logged in as Admin")
             window.location = "admin.html"
         }
         else {
-            alert("Credential is not matching")
+            alert("Invalid Credential")
         }
     }
 

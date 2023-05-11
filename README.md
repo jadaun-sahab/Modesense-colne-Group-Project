@@ -1,7 +1,24 @@
-# Fashion Hub
-### Welcome to the Fashion Hub, a completely free digital e-commerce website of premium brands which enables you to shop in a single place and is user friendly.
+## ABOUT THE PROJECT
+<h1> Fashion Hub </h1>
+<div align="center"  width="55" height="55">
+  <img src="images/logo5.jpg" alt="html" width="200" height="100"/>
+  <br>
+  <br>
+  <p> Welcome to the Fashion Hub, a completely free digital e-commerce website of premium brands which enables you to shop in a single place and is user friendly.
+  </p>
+  <br>
+  <p>Our system provides a user-friendly platform that enables users to browse products, search, filter, add and place order with ease. Additionally, all-encompassing administrative interface that enables authorized personnel to perform a wide range of operations, including Create, Read, Update, and Delete (CRUD) functions. </p>
+</div>
+<hr>
 
-This clone website is a collaboration project made by Vikas Jadaun (Team leader), Ahamed Faraz, Swati Tanu, Ranjan Sahu and Rajesh Kumar. This cloned ecommerce website is built using HTML, CSS, Vanilla JavaScript, APIs and a couple of external libraries such as Bootstrap, Font Awesome etc. 
+### Tech Stacks used:
+* HTML5 
+* CSS3
+* Vanilla JavaSrcipt 
+* Bootstrap
+* APIs
+* Font Awesome
+<hr>
 
 ### Key Features:
 * Login 
@@ -14,10 +31,59 @@ This clone website is a collaboration project made by Vikas Jadaun (Team leader)
 * Newsletter
 * Admin Side CRUD Functionalities
 * User Details
-### Deployment:
 
-The deployed link of the project: 
+## Run Locally
+### Clone this Project and run by copying index.js path on the browser.
 
-## Contributions
+```
+https://github.com/jadaun-sahab/humble-town-2578.git
+```
 
-Contributions are always welcome! Please submit an issue using the issue tab above if you have any feedback or improvement suggestions. I would appreciate it if you could submit a pull request with a fix.
+#### To run as an Admin 
+ ```javascript
+ Credentials: 
+ Email: admin@login
+ Password: admin@12345
+ ```
+<div align = "center">  
+  
+  
+| `Project Highlights` |
+| :------------------: | 
+
+ <div align = "center">
+   <h2>Landing Page</h2>
+   
+   <h2>Beauty Page</h2>
+  
+   <h2>Community Page</h2>
+   
+   <h2>Feedback</h2>
+   
+   <h2>Admin Dashboard</h2>
+
+   <h2>Admin CRUD</h2>
+   
+<div/>
+  <br>
+
+| `Demo` |
+| :----: | 
+   
+
+[FASHION HUB]()
+
+ 
+| `Authors` |
+| :-------: | 
+
+ [Vikas Jadaun](https://github.com/jadaun-sahab) 
+ 
+ [Ahamed Faraz](https://github.com/faraz412) 
+ 
+ [Swati Tanu](https://github.com/Swati-Tanu) 
+ 
+ [Ranjan Sahu](https://github.com/ranjanrnrn) 
+ 
+ [Rajesh Kumar](https://github.com/rajeshyadav9931) 
+ 
