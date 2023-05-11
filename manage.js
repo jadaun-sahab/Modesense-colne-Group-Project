@@ -1,5 +1,7 @@
 //Catching the element for product details from HTML.
 let tbody=document.getElementById("ProductDetails");
+let image="/images/delete.png";
+let baseurl="https://63c2fb80b0c286fbe5f73c53.mockapi.io"
 
 // Fetching Products Details From API.
 fetch("https://63c2fb80b0c286fbe5f73c53.mockapi.io/Products")
@@ -7,7 +9,6 @@ fetch("https://63c2fb80b0c286fbe5f73c53.mockapi.io/Products")
     return res.json();
 })
 .then((actData)=>{
-    console.log(actData);
     Products(actData)
 })
 .catch((error)=>{
@@ -32,12 +33,32 @@ function Products(Data){
         Price.innerText=product.price;
         let Imagetd=document.createElement("td");
         let Image=document.createElement("img");
-        Image.setAttribute("src",product.image);
+        Image.setAttribute("src","images/delete.jpg");
+
+        //Creating delete functionality by adding onclick on bin image at right.
+        Imagetd.addEventListener("click",()=>{
+            // console.log(product.id);
+            fetch(`${baseurl}/Products/${product.id}`,{
+                method:'DELETE',
+                headers:{
+                    'Content-Type':'application/json'
+                }
+            })
+            .then((res)=>{
+                return res.json
+            })
+            .then((data)=>{
+               alert("Product Deleted Succesfully")
+            })
+            .catch((error)=>{
+                console.log(error)
+            })
+        })
 
         //Appending created elements
         Imagetd.append(Image);
         div.append(ID,Brand,Name,ProductType,Price,Imagetd);
         tbody.append(div);
-    })
+    }) 
 }
 
