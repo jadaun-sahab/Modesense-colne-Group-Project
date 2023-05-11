@@ -73,13 +73,12 @@ https://github.com/jadaun-sahab/humble-town-2578.git
 <div/>
   <br>
 <hr>
+   
 | `Demo` |
 | :----: | 
-   
- 
-[FASHION HUB](https://fashionhubwebsite.netlify.app/)
 
-   <br>
+[FASHION HUB](https://fashionhubwebsite.netlify.app/)
+ <br>
  
 | `Authors` |
 | :-------: | 
