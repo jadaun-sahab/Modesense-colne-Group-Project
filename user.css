@@ -41,8 +41,7 @@ body.dark {
     --dark: #FBFBFB;
 }
 
-body {
-    /* background: var(--grey); */
+body { 
     background: linear-gradient(
     to right,
     rgb(210, 238, 240),
@@ -53,7 +52,8 @@ body {
 }
 
 /* SIDEBAR */
-#sidebar {
+#sidebar {border-right: 2px dashed rgb(223, 223, 223);
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -65,6 +65,11 @@ body {
     transition: .3s ease;
     overflow-x: hidden;
     scrollbar-width: none;
+}
+@media (max-width: 900px){
+    #sidebar {
+        display: block;
+    }
 }
 
 #sidebar .Admin {
@@ -171,8 +176,7 @@ body {
 /* CONTENT */
 #content {
     position: relative;
-    width: calc(100% - 280px);
-    left: 280px;
+    width: 100%;
     transition: .3s ease;
 }
 
@@ -195,7 +199,7 @@ body {
     left: 0;
     z-index: 1000;
 }
-
+ 
 #content nav::before {
     content: '';
     position: absolute;
@@ -212,6 +216,9 @@ body {
 }
 
 #content nav .bx.bx-menu {
+    position: absolute;
+    font-size: 2rem;
+    right: 20px;
     cursor: pointer;
     color: var(--dark);
 }
@@ -375,20 +382,7 @@ body {
 
 /*RESPONSIVENESS*/
 
-@media screen and (max-width: 580px) {
-    #sidebar {
-        width: 200px;
-    }
 
-    #content {
-        width: calc(100% - 60px);
-        left: 200px;
-    }
-
-    #content nav .nav-link {
-        display: none;
-    }
-}
 
 @media screen and (max-width: 576px) {
     #content nav form .form-input input {
