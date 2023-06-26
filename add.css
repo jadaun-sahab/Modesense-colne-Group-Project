@@ -366,6 +366,11 @@ body { background: linear-gradient(
     background-image: url("background.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background: linear-gradient(
+        to right,
+        rgba(77, 111, 233, 0.608),
+        rgb(68, 189, 229)
+      );
 }
 
 #content main .table-data .head {
