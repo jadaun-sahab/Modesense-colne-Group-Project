@@ -444,7 +444,6 @@ body {
      #content nav form .form-input input {
           display: none;
      }
-
      #content nav form .form-input button {
           width: auto;
           height: auto;
@@ -477,5 +476,4 @@ body {
      #content main .table-data .order table {
           min-width: 420px;
      }
-
 }
