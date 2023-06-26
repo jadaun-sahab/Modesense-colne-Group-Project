@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
     <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
     <title>Fashion Hub | Admin Dashboard</title>
 </head>
+
 <body>
-	<!--------------------------- Sidebar starts here------------------------------>
+    <!--------------------------- Sidebar starts here------------------------------>
     <section id="sidebar">
         <a href="#" class="Admin">
             <i class='bx bxs-crown'></i>
@@ -56,13 +58,14 @@
             </li>
         </ul>
     </section>
-	<!--------------------------- Sidebar ends here------------------------------>
+    <!--------------------------- Sidebar ends here------------------------------>
 
-	<!------------------------ Content part starts here--------------------------->
+    <!------------------------ Content part starts here--------------------------->
     <section id="content">
-	<!--------------------------- Navbar starts here------------------------------>
+        <!--------------------------- Navbar starts here------------------------------>
         <nav>
-            <i class='bx bx-menu'></i>
+
+            <i class='bx bx-menu' onclick="menutoggle()"></i>
             <a href="#" class="nav-link">Categories</a>
             <form action="#">
                 <div class="form-input">
@@ -71,9 +74,9 @@
                 </div>
             </form>
         </nav>
-	<!--------------------------- Navbar ends here------------------------------>
+        <!--------------------------- Navbar ends here------------------------------>
 
-	<!----------------------- Add-Update section starts here------------------------->
+        <!----------------------- Add-Update section starts here------------------------->
         <main>
             <div class="head-title">
                 <div class="left">
@@ -96,19 +99,20 @@
                         <form id="msform">
                             <!-- fieldsets -->
                             <fieldset>
-                              <h2 class="fs-title">Add/Update Product</h2>
-                              <input type="number" name="id" placeholder="Id" id="id"/>
-                              <input type="text" name="brand" placeholder="Brand" id="brand"/>
-                              <input type="text" name="name" placeholder="Name" id="name"/>
-                              <input type="text" name="description" placeholder="Description" id="description"/>
-                              <input type="text" name="price" placeholder="Price" id="price"/>
-                              <input type="text" name="producttype" placeholder="ProductType" id="producttype"/>
-                              <input type="url" name="imageurl" placeholder="ImageUrl" id="imageurl"/>
-                              <input type="button" name="Add" class="next action-button" value="Add" id="Add"/>
-                              <input type="button" name="Get" class="next action-button" value="Get" id="Get"/>
-                              <input type="button" name="Update" class="next action-button" value="Update" id="Update"/>
+                                <h2 class="fs-title">Add/Update Product</h2>
+                                <input type="number" name="id" placeholder="Id" id="id" />
+                                <input type="text" name="brand" placeholder="Brand" id="brand" />
+                                <input type="text" name="name" placeholder="Name" id="name" />
+                                <input type="text" name="description" placeholder="Description" id="description" />
+                                <input type="text" name="price" placeholder="Price" id="price" />
+                                <input type="text" name="producttype" placeholder="ProductType" id="producttype" />
+                                <input type="url" name="imageurl" placeholder="ImageUrl" id="imageurl" />
+                                <input type="button" name="Add" class="next action-button" value="Add" id="Add" />
+                                <input type="button" name="Get" class="next action-button" value="Get" id="Get" />
+                                <input type="button" name="Update" class="next action-button" value="Update"
+                                    id="Update" />
                             </fieldset>
-                          </form>
+                        </form>
                     </div>
                     <div id="imagecont">
                         <img id="updateImage" src="" alt="">
@@ -122,9 +126,9 @@
                 </div>
 
         </main>
-	<!----------------------- Add-Update section ends here------------------------->
+        <!----------------------- Add-Update section ends here------------------------->
     </section>
-	<!------------------------ Content part ends here--------------------------->
+    <!------------------------ Content part ends here--------------------------->
 
     <script src="Add.js"></script>
 </body>

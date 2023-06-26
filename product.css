@@ -48,6 +48,8 @@ body {
 
 /* SIDEBAR */
 #sidebar {
+    border-right: 2px dashed rgb(223, 223, 223);
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -165,8 +167,7 @@ body {
 /* CONTENT */
 #content {
     position: relative;
-    width: calc(100% - 280px);
-    left: 280px;
+    width: 100%;
     transition: .3s ease;
 }
 
@@ -209,6 +210,9 @@ body {
 }
 
 #content nav .bx.bx-menu {
+    position: absolute;
+    font-size: 2rem;
+    right: 20px;
     cursor: pointer;
     color: var(--dark);
 }
