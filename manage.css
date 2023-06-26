@@ -395,11 +395,6 @@ body {
         width: 200px;
     }
 
-    #content {
-        width: calc(100% - 60px);
-        left: 200px;
-    }
- 
 }
 
 @media screen and (max-width: 576px) {
