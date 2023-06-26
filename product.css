@@ -42,7 +42,12 @@ body.dark {
 }
 
 body {
-    background: var(--grey);
+    background: linear-gradient(
+        to right,
+        rgb(210, 238, 240),
+        rgb(241, 174, 231),
+        rgb(152, 152, 234)
+      );
     overflow-x: hidden;
 }
 
