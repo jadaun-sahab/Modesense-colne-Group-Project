@@ -300,6 +300,7 @@ body {
 }
 
 #content main .box-info {
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 24px;
@@ -368,8 +369,8 @@ body {
     background-size: cover;
     background: linear-gradient(
         135deg,
-        rgb(0, 229, 255),
-        rgb(149, 0, 255)
+        rgb(255, 255, 255),
+        rgb(183, 82, 255)
       );
 }
 
