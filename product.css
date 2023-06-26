@@ -59,8 +59,12 @@ body {
     top: 0;
     left: 0;
     width: 280px;
-    height: 100%;
-    background: var(--light);
+    height: 100%; 
+    background: linear-gradient(
+        to right,
+        rgb(210, 238, 240),
+        rgb(152, 152, 234)
+      );
     z-index: 2000;
     font-family: var(--lato);
     transition: .3s ease;
@@ -273,6 +277,11 @@ body {
 
 /* MAIN */
 #content main {
+    background: linear-gradient(
+        to right,
+        rgba(210, 238, 240, 0.489),
+        rgba(152, 152, 234, 0.478)
+      );
     width: 100%;
     padding: 36px 24px;
     font-family: var(--poppins);
@@ -312,8 +321,7 @@ body {
         rgb(152, 152, 234)
       );
     box-shadow: 2px 2px 20px rgb(255, 255, 255);
-    border-radius: 20px;
-    background: var(--light);
+    border-radius: 20px; 
     padding: 24px;
     overflow-x: auto;
 }

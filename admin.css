@@ -60,7 +60,11 @@ body {
      left: 0;
      width: 280px;
      height: 100%;
-     background: var(--light);
+     background: linear-gradient(
+          to right,
+          rgb(210, 238, 240),
+          rgb(152, 152, 234)
+        );
      z-index: 2000;
      font-family: var(--lato);
      transition: .3s ease;
