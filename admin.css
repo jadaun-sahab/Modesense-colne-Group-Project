@@ -306,7 +306,7 @@ body {
 }
 
 #content main .box-info li {
-     
+     /* height: 80%; */
      padding: 24px;
      background: rgb(217 237 255 / 29%);
      border: 2px  solid white;
