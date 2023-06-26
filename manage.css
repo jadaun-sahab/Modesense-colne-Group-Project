@@ -399,10 +399,7 @@ body {
         width: calc(100% - 60px);
         left: 200px;
     }
-
-    #content nav .nav-link {
-        display: none;
-    }
+ 
 }
 
 @media screen and (max-width: 576px) {
