@@ -307,6 +307,7 @@ body {
 }
 
 #content main .box-info li {
+    height: 80%;
     padding: 24px;
     background: rgba(235, 249, 255, 0.415);
     border-radius: 20px;
