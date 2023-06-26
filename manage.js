@@ -63,7 +63,7 @@ function Products(Data){
 }
 
 
-
+// js for sidebar toogle button
 
 
 var MenuItem = document.getElementById("sidebar");
