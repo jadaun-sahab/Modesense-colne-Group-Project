@@ -300,7 +300,6 @@ body {
 }
 
 #content main .box-info {
-   
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 24px;
@@ -309,8 +308,9 @@ body {
 
 #content main .box-info li {
     padding: 24px;
-    background: var(--light);
+    background: rgba(235, 249, 255, 0.415);
     border-radius: 20px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.541);
     display: flex;
     align-items: center;
     grid-gap: 24px;
