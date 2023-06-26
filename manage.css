@@ -390,12 +390,7 @@ body {
 
 /*RESPONSIVENESS*/
 
-@media screen and (max-width: 580px) {
-    #sidebar {
-        width: 200px;
-    }
-
-}
+ 
 
 @media screen and (max-width: 576px) {
     #content nav form .form-input input {
