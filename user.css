@@ -52,7 +52,8 @@ body {
 }
 
 /* SIDEBAR */
-#sidebar {border-right: 2px dashed rgb(223, 223, 223);
+#sidebar {
+    border-right: 2px dashed rgb(223, 223, 223);
     display: none;
     position: fixed;
     top: 0;
