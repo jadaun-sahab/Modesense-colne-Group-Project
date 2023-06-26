@@ -17,7 +17,6 @@ li {
 :root {
     --poppins: 'Poppins', sans-serif;
     --lato: 'Lato', sans-serif;
-
     --light: #F9F9F9;
     --blue: #3C91E6;
     --light-blue: #CFE8FF;
@@ -369,7 +368,7 @@ body {
     cursor: pointer;
     width: 55px;
     height: 55px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
 
 }
 
