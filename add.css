@@ -367,9 +367,9 @@ body { background: linear-gradient(
     background-repeat: no-repeat;
     background-size: cover;
     background: linear-gradient(
-        to right,
-        rgba(77, 111, 233, 0.608),
-        rgb(68, 189, 229)
+        135deg,
+        rgb(0, 229, 255),
+        rgb(149, 0, 255)
       );
 }
 
