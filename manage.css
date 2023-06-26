@@ -57,6 +57,11 @@ body {
     display: none;
     position: fixed;
     top: 0;
+    background: linear-gradient(
+        to right,
+        rgb(210, 238, 240),
+        rgb(152, 152, 234)
+      );
     left: 0;
     width: 280px;
     height: 100%; 
