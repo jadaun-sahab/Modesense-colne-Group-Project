@@ -360,11 +360,6 @@ body { background: linear-gradient(
 }
 
 #content main .table-data>div {
-    background: linear-gradient(
-        to right,
-        rgb(210, 238, 240),
-        rgb(152, 152, 234)
-      );
     border-radius: 20px;
     padding: 24px;
     overflow-x: auto;
