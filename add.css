@@ -57,6 +57,11 @@ body { background: linear-gradient(
     border-right: 2px dashed rgb(223, 223, 223);
     display: none;
     position: fixed;
+    background: linear-gradient(
+        to right,
+        rgb(210, 238, 240),
+        rgb(152, 152, 234)
+      );
     top: 0;
     left: 0;
     width: 280px;
