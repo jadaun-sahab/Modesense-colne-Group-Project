@@ -366,7 +366,6 @@ body { background: linear-gradient(
         rgb(152, 152, 234)
       );
     border-radius: 20px;
-    background: var(--light);
     padding: 24px;
     overflow-x: auto;
     background-image: url("background.webp");
