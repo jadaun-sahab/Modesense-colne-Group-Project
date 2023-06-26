@@ -59,8 +59,7 @@ body {
     top: 0;
     left: 0;
     width: 280px;
-    height: 100%;
-    background: var(--light);
+    height: 100%; 
     z-index: 2000;
     font-family: var(--lato);
     transition: .3s ease;
