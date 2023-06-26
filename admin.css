@@ -438,6 +438,9 @@ body {
  
 
 @media (max-width: 576px) {
+     #content main .box-info li {
+          height: 80%;
+     }
      #content nav form .form-input input {
           display: none;
      }
