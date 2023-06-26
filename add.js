@@ -119,6 +119,10 @@ UpdateButton.addEventListener("click",()=>{
     })
 })
 
+
+
+
+// js for sidebar toogle button
 var MenuItem = document.getElementById("sidebar");
 
 MenuItem.style.display = "none";
