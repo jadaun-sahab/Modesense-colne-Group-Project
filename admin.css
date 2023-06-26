@@ -307,8 +307,8 @@ body {
 
 #content main .box-info li {
      padding: 24px;
-     background: rgba(245, 220, 220, 0);
-     border
+     background: rgb(217 237 255 / 29%);
+     border: 2px solid white;
      border-radius: 20px;
      display: flex;
      align-items: center;
