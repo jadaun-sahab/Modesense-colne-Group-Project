@@ -303,7 +303,6 @@ body {
 }
 
 #content main .table-data {
-     
     display: flex;
     flex-wrap: wrap;
     grid-gap: 24px;

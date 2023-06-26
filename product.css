@@ -306,6 +306,12 @@ body {
 }
 
 #content main .table-data>div {
+    background: linear-gradient(
+        to right,
+        rgb(223, 210, 240), 
+        rgb(152, 152, 234)
+      );
+    box-shadow: 2px 2px 20px rgb(255, 255, 255);
     border-radius: 20px;
     background: var(--light);
     padding: 24px;
