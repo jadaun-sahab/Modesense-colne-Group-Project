@@ -366,8 +366,6 @@ body {
 
 #content main .table-data .order table td img:hover {
     cursor: pointer;
-    /* width: 55px;
-    height: 55px; */
     border: 3px solid black;
 
 }
