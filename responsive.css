@@ -20,7 +20,8 @@
     display: none;
   }
 
-  #navbar .fa-bars { 
+  #navbar .fa-bars {
+    display: block;
   }
 
   #navi ul {
